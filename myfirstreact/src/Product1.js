@@ -5,7 +5,8 @@ import Logo2 from './pc2.png';
 import Logo3 from './pc3.jpg';
 import AlbumJson from './Album1.json'
 import Product from './Productexample';
-import {Row,Col,Jumbotron,Carousel} from 'react-bootstrap';
+import {Row,Col,Jumbotron} from 'react-bootstrap';
+import Carousel from 'react-grid-carousel'
 class Product1 extends React.Component{
     state = {
         modal: false,
@@ -22,7 +23,7 @@ class Product1 extends React.Component{
    
         <div>
 
-<Row>
+            <Row>
                 {
                   album.map(product => (
                     <Col sm={6} md={4} className="mb-3">
@@ -36,8 +37,18 @@ class Product1 extends React.Component{
                 }
               </Row>
 
-
-
+              <Carousel cols={2} rows={1} gap={10} loop>
+      <Carousel.Item>
+        <img width="100%" src={Logo1} />
+      </Carousel.Item>
+      <Carousel.Item>
+        <img width="100%" src={Logo2}  />
+      </Carousel.Item>
+      <Carousel.Item>
+        <img width="100%" src={Logo3}  />
+      </Carousel.Item>
+    
+    </Carousel>
         </div>
       
         
