@@ -1,6 +1,6 @@
 import React,{Component} from 'react';
 import PropTypes from 'prop-types';
-import { Button, Card, CardImg,  CardTitle, CardSubtitle, CardText, Badge } from 'reactstrap';
+import { Button, Card, CardImg,  CardTitle, CardSubtitle, CardText, Badge, Carousel } from 'reactstrap';
 
 export default class Product extends Component {
     static propTypes={
@@ -26,6 +26,8 @@ export default class Product extends Component {
          
       
       </Card>
+     
+
     );
   }
 }

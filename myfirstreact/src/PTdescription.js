@@ -75,17 +75,10 @@ class PTdescription extends React.Component{
                   <Jumbotron>
                     <h1 className="display-3">幸福時機</h1>
                     <p className="lead">
-                    幸福時機成立以來，結合實體唱片通路、唱片公司、網站，因而擁有豐富、完整的音樂資源
+                    幸福時機2015年成立，我們秉持著安心，健康的原則去製作著我們每個產品，
                     </p>
-                    <p className="lead">
-                      並與電視、廣播等媒體進行策略聯盟，已迅速打響知名度，並廣受各界好評
-                    </p>
-                    <p className="lead">
-                      不僅如此，美客唱片將跨足大中華地區，透過舉辦跨國、跨區域的大型頒獎典禮、演唱會以及音樂活動
-                    </p>
-                    <p className="lead">
-                      進一步擴大影響力，提昇流行音樂產業的動能
-                    </p>
+                   
+                
                     <hr className="my-2" />
                     <p className="lead">
                       <Button color="primary" onClick={this.toggle}>購物車({cart.length})</Button>
@@ -96,7 +89,7 @@ class PTdescription extends React.Component{
               <Row>
                 {
                   album.map(product => (
-                    <Col sm={6} md={4} className="mb-3">
+                    <Col sm={6} md={4}  className="mb-3">
                   <Product
                     product={product}
                     cart={cart}

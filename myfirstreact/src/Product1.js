@@ -5,7 +5,7 @@ import Logo2 from './pc2.png';
 import Logo3 from './pc3.jpg';
 import AlbumJson from './Album1.json'
 import Product from './Productexample';
-import {Row,Col,Jumbotron} from 'react-bootstrap';
+import {Row,Col,Jumbotron,Carousel} from 'react-bootstrap';
 class Product1 extends React.Component{
     state = {
         modal: false,
