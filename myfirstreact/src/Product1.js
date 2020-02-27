@@ -48,33 +48,33 @@ class Product1 extends React.Component{
 
               <Carousel cols={3} rows={1} gap={5} loop>
       <Carousel.Item>
-        <img width="100%" src={Logo1} />
+        <img width="100%" src={Logo1} alt="Card image cap" />
       </Carousel.Item>
       <Carousel.Item>
-        <img width="100%" src={Logo2}  />
+        <img width="100%" src={Logo2}  alt="Card image cap"/>
       </Carousel.Item>
       <Carousel.Item>
-        <img width="100%" src={Logo3}  />
-      </Carousel.Item>
-
-      <Carousel.Item>
-        <img width="100%" src={Logo6}  />
+        <img width="100%" src={Logo3} alt="Card image cap" />
       </Carousel.Item>
 
       <Carousel.Item>
-        <img width="100%" src={Logo7}  />
+        <img width="100%" src={Logo6} alt="Card image cap" />
       </Carousel.Item>
 
       <Carousel.Item>
-        <img width="100%" src={Logo8}  />
+        <img width="100%" src={Logo7}  alt="Card image cap"/>
       </Carousel.Item>
 
       <Carousel.Item>
-        <img width="100%" src={Logo9}  />
+        <img width="100%" src={Logo8} alt="Card image cap" />
       </Carousel.Item>
 
       <Carousel.Item>
-        <img width="100%" src={Logo10}  />
+        <img width="100%" src={Logo9} alt="Card image cap" />
+      </Carousel.Item>
+
+      <Carousel.Item>
+        <img width="100%" src={Logo10} alt="Card image cap" />
       </Carousel.Item>
       
     
