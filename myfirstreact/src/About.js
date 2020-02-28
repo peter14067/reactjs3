@@ -6,18 +6,29 @@ import Logo3 from './112103.jpg';
 import Logo4 from './112104.jpg';
 import Logo5 from './112201.jpg';
 import Logo6 from './pc1.jpg';
+import AlbumJson from './Album3.json'
+import Product from './Productexample';
+import { Container, Row, Col, Jumbotron, Button, Card, CardImg, CardBlock, CardTitle, CardSubtitle, CardText, Badge, Modal, ModalHeader, ModalBody, ModalFooter, Table, Alert } from 'reactstrap';
 
 
 
 
 class About extends React.Component{
     
-    
+  state = {
+    modal: false,
+    album: AlbumJson,
+    cart:[],
+  }
 
     
     render(){
                 
-        return( 
+
+      const { city,album1,album,cart,modal } = this.state;
+        
+      
+      return( 
    
 
 
@@ -27,9 +38,10 @@ class About extends React.Component{
         <div >
 
 
-/*
 
 
+
+              
 
 
          
@@ -49,6 +61,59 @@ class About extends React.Component{
                          <div className="demo2">About US</div>
             </div>
             
+
+          
+
+
+           
+
+
+
+
+              <Row>
+                <Col md={12}>
+                  <Jumbotron>
+                    <h1 className="display-3" style={{textAlign:"center",color:"red"}}>家庭成員介紹</h1>
+                   
+
+
+                    <Row>
+                {
+                  album.map(product => (
+                    <Col sm={6} md={4} className="mb-3">
+                  <Product
+                    product={product}
+                   
+                   
+                  />
+                  </Col>
+                  ))
+                }
+              </Row>
+             
+
+
+
+
+
+                  </Jumbotron>
+                
+                
+                
+                
+                </Col>
+             
+             
+             
+             
+               
+             
+             
+             
+              </Row>
+
+
+
             <div style={{backgroundColor:"#33C496",height:"100vh"}}>
                 <div className="abouttest">
                 家庭成員介紹
