@@ -73,7 +73,7 @@ class About extends React.Component{
               <Row>
                 <Col md={12}>
                   <Jumbotron>
-                    <h1 className="display-3" style={{textAlign:"center",color:"red"}}>家庭成員介紹</h1>
+                    <h1  style={{textAlign:"center",color:"red",}}>家庭成員介紹</h1>
                    
 
 
@@ -114,36 +114,11 @@ class About extends React.Component{
 
 
 
-            <div style={{backgroundColor:"#33C496",height:"100vh"}}>
-                <div className="abouttest">
-                家庭成員介紹
-                </div>
-                <div class="box">
-               
-                <img src={Logo1} alt="Logo" /> 
-                <p>這是媽媽，這裡大大小小的花圃都是由她負責去澆花，施肥處理的。</p>
-                </div>
-                
-                <div class="box">
-            
-                <img src={Logo2}   alt="Logo" /> 
-                <p style={{fontSize:"1.5em",fontFamily:"cursive"}}>這是姐姐，家裡網站的logo以及藝術上的設計都是由她處理的。</p>
-               
-                </div>
-                <div class="box">
-           
-                <img  src={Logo3} alt="Logo" /> 
-                <p style={{fontSize:"1.5em",fontFamily:"cursive"}}> 這是哥哥，當初田裡的植物規劃以及環境整理都是有他負責。</p>
-              
-                </div>
-               
-              
-            </div>
            
            
            
             <div className="demo2-bg" >
-                         <div className="demo2">我們的努力 < /div>
+                         <div className="demo2">the beginning< /div>
                         
             </div>
 
@@ -172,7 +147,9 @@ class About extends React.Component{
            
             </div>
         
-         
+            <div className="demo2-bg" >
+                         <div className="demo2">now</div>
+            </div>
             
             
             
