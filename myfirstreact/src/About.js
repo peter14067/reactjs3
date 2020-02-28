@@ -126,7 +126,7 @@ class About extends React.Component{
 
 
 
-            <div style={{backgroundColor:"#33C496",height:"100vh",borderTop:"2px solid white"}}>
+            <div style={{backgroundColor:"#33C496",height:"120vh",borderTop:"2px solid white"}}>
             
             <div class="hover">
             
@@ -135,19 +135,28 @@ class About extends React.Component{
            
              
            
-            <p class="p1">這是檀香，經歷了5年的成長以後，每個檀香都變得很大了~~這是檀香，經歷了5年的成長以後，每個檀香都變得很大了~~</p>
-            <br></br>
-            <img src={Logo6} alt="Logo" />
-            <img src={Logo5} alt="Logo" /> 
-            <p class="p2">1563165156165156</p>
-            
+            <p class="p1">這是檀香，經歷了5年的成長以後，每個檀香都變得很大了</p>
             </div>
-           
-          
+            <br></br>
+            <br></br>
+            <div class="hover">
+            <img src={Logo6} alt="Logo" />
+            <img src={Logo5} alt="Logo" />
+            <p class="p1">金新木薑子(佛光樹)，經歷了5年的成長以後，變的金光閃閃了呢~~</p>
+            </div>
+         
+            
+         
            
             </div>
         
-            <div className="demo2-bg" >
+            <div className="demo2-bg" style={{marginBottom:"10"}}>
+
+                
+           <br></br>
+           <br></br>
+           <br></br>
+          
                          <div className="demo2">now</div>
             </div>
             
