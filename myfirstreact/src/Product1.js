@@ -94,7 +94,7 @@ class Product1 extends React.Component{
 
 
 
-              <Carousel cols={3} rows={1} gap={5} loop  data-interval="true">
+              <Carousel cols={3} rows={1} gap={5} loop  data-ride="carousel">
      
       {
                   album1.map((product,i) => (
