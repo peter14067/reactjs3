@@ -94,11 +94,11 @@ class Product1 extends React.Component{
 
 
 
-              <Carousel cols={3} rows={1} gap={5} loop >
+              <Carousel cols={3} rows={1} gap={5} loop  data-interval="true">
      
       {
                   album1.map((product,i) => (
-                    <Carousel.Item key={i}>
+                    <Carousel.Item>
                    
                   
                 
