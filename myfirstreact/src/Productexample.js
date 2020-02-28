@@ -23,7 +23,7 @@ export default class Product extends Component {
         return(
           
           <div >
-
+              <Card>
                     <CardImg width="100%" src={product.img} alt="Card image cap"/>
 
                 <CardTitle>{product.title} </CardTitle>
@@ -31,7 +31,7 @@ export default class Product extends Component {
           <CardText>{product.desc}</CardText>
          
      
-
+          </Card>
 
      
       </div>

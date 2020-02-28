@@ -1,5 +1,6 @@
 import React from "react"
 import  './index4.css'; 
+/*
 import Logo1 from './pc1.jpg';
 import Logo2 from './pc2.jpg';
 import Logo3 from './pc3.jpg';
@@ -10,45 +11,31 @@ import Logo7 from './pc7.jpg';
 import Logo8 from './pc8.jpg';
 import Logo9 from './pc9.jpg';
 import Logo10 from './pc10.jpg';
-
+*/
 
 import AlbumJson from './Album1.json'
+import AlbumJson1 from './Album2.json'
 import Product from './Productexample';
 import {Row,Col,Jumbotron} from 'react-bootstrap';
 import Carousel from 'react-grid-carousel'
+/*
+import Card from "react-bootstrap/Card";
+import Img from "react-bootstrap/Img";
+import Title from "react-bootstrap/Title";
+import Price from "react-bootstrap/Price";
+import Star from "react-bootstrap/Star";
+*/
 class Product1 extends React.Component{
     state = {
         modal: false,
         album: AlbumJson,
+        album1:AlbumJson1,
         cart:[],
       }
     
-  
-    render(){
-                
+  /*
 
-        const { album,cart,modal } = this.state;
-        return( 
-   
-        <div>
 
-            <Row>
-                {
-                  album.map(product => (
-                    <Col sm={6} md={4} className="mb-3">
-                  <Product
-                    product={product}
-                    cart={cart}
-                    addToCart={this.addToCart}
-                  />
-                  </Col>
-                  ))
-                }
-              </Row>
-
-              <Carousel cols={3} rows={1} gap={5} loop>
-      <Carousel.Item>
-        <img width="100%" src={Logo1} alt="Card image cap" />
       </Carousel.Item>
       <Carousel.Item>
         <img width="100%" src={Logo2}  alt="Card image cap"/>
@@ -77,8 +64,68 @@ class Product1 extends React.Component{
         <img width="100%" src={Logo10} alt="Card image cap" />
       </Carousel.Item>
       
+  */
+
+
+
+    render(){
+                
+
+        const { city,album1,album,cart,modal } = this.state;
+        return( 
+   
+        <div>
+
+            <Row>
+                {
+                  album.map(product => (
+                    <Col sm={6} md={4} className="mb-3">
+                  <Product
+                    product={product}
+                    cart={cart}
+                    addToCart={this.addToCart}
+                  />
+                  </Col>
+                  ))
+                }
+              </Row>
+
+
+
+
+
+              <Carousel cols={3} rows={1} gap={5} loop >
+     
+      {
+                  album1.map((product,i) => (
+                    <Carousel.Item key={i}>
+                   
+                  
+                
+                  <Product
+                    product={product}
+                  
+              
+                  />
+
+
+
+                
+                  </Carousel.Item>
+
+                  ))
+
+                }
+        
+        </Carousel>
+
+
+
+
+
+        
     
-    </Carousel>
+ 
         </div>
       
         

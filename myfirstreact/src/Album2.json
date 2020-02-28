@@ -1,0 +1,44 @@
+[
+  {
+    "id": 1,
+    "img": "./pc6.jpg",
+    "title": "檀香",
+    "desc": "",
+    "price": 800
+  }
+ ,
+  {
+    "id": 2,
+    "img": "./pc7.jpg",
+    "title": "無花果",
+    "desc": "",
+    "price": 800
+  }
+ ,
+  {
+    "id": 3,
+    "img": "./pc8.jpg",
+    "title": "金新木薑子(佛光樹)",
+    "desc": "",
+    "price": 800
+  }
+,
+  {
+    "id": 4,
+    "img": "./pc9.jpg",
+    "title": "金新木薑子(佛光樹)",
+    "desc": "",
+    "price": 800
+  }
+ ,
+
+  {
+    "id": 5,
+    "img": "./pc10.jpg",
+    "title": "金新木薑子(佛光樹)",
+    "desc": "",
+    "price": 800
+  }
+ 
+ 
+]
