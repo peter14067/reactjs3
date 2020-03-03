@@ -16,13 +16,13 @@ import Logo10 from './pc10.jpg';
 import AlbumJson from './Album1.json'
 import AlbumJson1 from './Album2.json'
 import Product from './Productexample';
-import {Row,Col,Jumbotron,Carousel} from 'react-bootstrap';
+import {Row,Col,Jumbotron,} from 'react-bootstrap';
 
 
 //import { Carousel } from 'react-responsive-carousel';
 
 
-//import Carousel from 'react-grid-carousel'
+import Carousel from 'react-grid-carousel'
 
 
 /*
@@ -78,17 +78,73 @@ class Product1 extends React.Component{
     render(){
                 
 
-        //const { city,album1,album,cart,modal } = this.state;
+        const { city,album1,album,cart,modal } = this.state;
         return( 
    
-        <div id="myCarousel" class="carousel slide" data-ride="carousel">
+        <div>
 
-           
+            <Row>
+                {
+                  album.map(product => (
+                    <Col sm={6} md={4} className="mb-3"  gap={10} loop>
+                  <Product
+                    product={product}
+                    cart={cart}
+                    addToCart={this.addToCart}
+                  />
+                  </Col>
+                  ))
+                }
+              </Row>
 
 
 
 
-<div id="myCarousel" class="carousel slide" data-ride="carousel">
+
+              <Carousel cols={3} rows={1} gap={5} loop  data-ride="carousel">
+     
+      {
+                  album1.map((product,i) => (
+                    <Carousel.Item>
+                   
+                  
+                
+                  <Product
+                    product={product}
+                  
+              
+                  />
+
+
+
+                
+                  </Carousel.Item>
+
+                  ))
+
+                }
+        
+        </Carousel>
+
+
+        
+
+
+        <div id="carousel-example-generic" class="carousel slide" data-ride="carousel"  cols={1} rows={5} gap={5} loop>
+
+              <Carousel.Item> <img width="20%" src={Logo6} alt="Card image cap" /></Carousel.Item>
+              <Carousel.Item> <img width="20%" src={Logo7} alt="Card image cap" /></Carousel.Item>
+              <Carousel.Item> <img width="20%" src={Logo7} alt="Card image cap" /></Carousel.Item>
+              <Carousel.Item> <img width="20%" src={Logo7} alt="Card image cap" /></Carousel.Item>
+              <Carousel.Item> <img width="20%" src={Logo7} alt="Card image cap" /></Carousel.Item>
+              <Carousel.Item> <img width="20%" src={Logo7} alt="Card image cap" /></Carousel.Item>
+              <Carousel.Item> <img width="20%" src={Logo7} alt="Card image cap" /></Carousel.Item>
+              <Carousel.Item> <img width="20%" src={Logo7} alt="Card image cap" /></Carousel.Item>
+
+</div>
+
+
+<div id="myCarousel" class="carousel slide" >
 
 <ol class="carousel-indicators">
         <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
@@ -113,7 +169,7 @@ class Product1 extends React.Component{
 
 
         <a class="carousel-control left" href="#myCarousel" 
-       data-slide="prev"> </a>
+       data-slide="prev"> <span _ngcontent-c3="" aria-hidden="true" class="glyphicon glyphicon-chevron-right"></span></a>
     <a class="carousel-control right" href="#myCarousel" 
        data-slide="next">&rsaquo;</a>
    
