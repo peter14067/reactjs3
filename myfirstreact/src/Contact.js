@@ -5,11 +5,38 @@ class Contact extends React.Component{
     constructor(props){
         super(props)
             this.state={username:''};
+            this.state={mail:''};
+            this.state={phone:''};
         
     }
-    ChangeHandler=(event)=>{
-        this.setState({username:event.target.value});
+
+
+    mySubmitHandler=(event)=>{
+        event.preventDefault();
+       
+        alert("姓名:"+this.state.username+"\r"+"電子信箱:"+this.state.mail+"\r"+"電話號碼:"+this.state.phone);
     }
+
+    myChangeHandler = (event) => {
+       this.setState({username:event.target.value});
+      
+        
+      }
+
+      myChangeHandler1 = (event) => {
+        this.setState({mail:event.target.value});
+       
+         
+       }
+
+       myChangeHandler2 = (event) => {
+        this.setState({phone:event.target.value});
+       
+         
+       }
+
+     
+
 
 
     render(){
@@ -73,14 +100,14 @@ class Contact extends React.Component{
              <from>
                  <h1 style={{fontSize:"1em",fontFamily:" DFKai-SB"}} >聯絡資訊</h1>
                
-                <input type="text" placeholder="姓名" style={{marginRight:"1vw",borderBottomColor:"red",width:"100%",borderRightColor:"red",borderLeftColor:"red",borderTopColor:"red"}} onChange={this.ChangeHandler}/>
+                <input type="text"   onChange={this.myChangeHandler} placeholder="姓名" style={{marginRight:"1vw",borderBottomColor:"red",width:"100%",borderRightColor:"red",borderLeftColor:"red",borderTopColor:"red"}} />
                
                 <br></br>
                 <br></br>
-                <input type="text" placeholder="電子信箱" style={{borderColor:"red",width:"100%"}}/>
+                <input type="text" onChange={this.myChangeHandler1}  placeholder="電子信箱" style={{borderColor:"red",width:"100%"}}/>
                 <br></br>
                 <br></br>
-                <input type="text" placeholder="電話號碼" style={{borderColor:"red",width:"100%"}}/>
+                <input type="text" onChange={this.myChangeHandler2}  placeholder="電話號碼" style={{borderColor:"red",width:"100%"}}/>
                 <br></br>
                 <br></br>
                 
@@ -96,7 +123,7 @@ class Contact extends React.Component{
                 <br></br>
                 
                 <div>
-                <form>
+                <form onSubmit={this.mySubmitHandler}>
                    
                 <select value={this.state.problem} style={{width:"100%"}}>
                 <option value="產品問題" >產品問題</option>
