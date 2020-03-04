@@ -159,35 +159,66 @@ class About extends React.Component{
           
                          <div className="demo2">now</div>
             </div>
-            
-            
-            
-            
-            
-            
-            
-            <div class="rwd_slider_container_wrapper">
-             <div class="rwd_slider_container">
-              <div class="slider_container" >
-          <div>
-        <img src={Logo1} alt="pure css slider" width="400" height="280" />
-      </div>
-      <div>
-        <img src={Logo2} alt="pure css slider" width="400" height="280" />
-      </div>
-      <div>
-        <img src={Logo3} alt="pure css slider" width="400" height="280" />
-      </div>
-      <div>
-        <img src={Logo4} alt="pure css slider" width="400" height="280" />
-      </div>
-      <div>
-        <img src={Logo5} alt="pure css slider" width="400" height="280" />
-      </div>
-    </div>
-  </div>
-</div>
+
+
+                <div>
+                <Table responsive="sm">
+                <thead>
+                <tr>
+      
+        <th>年度</th>
+        <th>年度大事</th>
+       
+      </tr>
+      </thead>
+
+
+
+      <tbody>
+
+      <tr>
+        <td>2015/3/5</td>
+        <td>整修田</td>
+       
+      </tr>
+
+
+
+      <tr style={{backgroundColor:"lightgrey"}}>
+        <td>2019</td>
+        <td>彰化百寶村擺攤</td>
+       
+      </tr>
+
+
+
+
+      <tr>
+        <td>2020/1/26-2020/2/9</td>
+        <td>花在彰化擺攤</td>
+       
+      </tr>
+
+
+
+      <tr style={{backgroundColor:"lightgrey"}}>
+        <td>2020/2/28-29</td>
+        <td>台中擺攤</td>
+       
+      </tr>
+  
+
+
+ 
+
+      </tbody>
+ 
+
+
+      </Table>
+                </div>
         
+           
         
         
         </div>
