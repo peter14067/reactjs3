@@ -2,8 +2,8 @@ import React from "react"
 
 
 import AlbumJson from './Album.json'
-import Product from './Product';
-import { Container, Row, Col, Jumbotron, Button, Card, CardImg, CardBlock, CardTitle, CardSubtitle, CardText, Badge, Modal, ModalHeader, ModalBody, ModalFooter, Table, Alert } from 'reactstrap';
+import Product from './Product'
+import { Container, Row, Col, Jumbotron, Button, Card, CardImg, CardBlock, CardTitle, CardSubtitle, CardText, Badge, Modal, ModalHeader, ModalBody, ModalFooter, Table, Alert } from 'reactstrap'
 
 
 class PTdescription extends React.Component{

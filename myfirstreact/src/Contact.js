@@ -1,5 +1,6 @@
 import React from "react"
- 
+import { Form, Button, FormGroup, FormControl, ControlLabel } from "react-bootstrap";
+//import {Form,Col,Row} from 'react-bootstrap/Form'
 class Contact extends React.Component{
     render(){
         return (
@@ -14,16 +15,12 @@ class Contact extends React.Component{
             <br></br>
             親愛的客戶您好，您的問題就是我們的問題，如果有任何疑問或者建議需要我們的協助，歡迎您透過以下任何管道與我們聯繫，我們將竭誠為您服務。
 
-
-          
-           
-
-
-
-             <div class="bottom">
-            <table1>
+                       <div style={{}} >
+                       <br></br>
+                       <br></br>
+            <table1  >
   
-            <th>
+            <th >
       <tr>
             <td>面交住址:</td>
             <td>彰化縣東環路三段336號</td>
@@ -56,6 +53,32 @@ class Contact extends React.Component{
        </th>
 
             </table1>
+            </div>
+            <br></br>
+            <br></br>
+            <div>
+            <div>
+             
+             <from>
+                 <h1 sty>聯絡資訊</h1>
+                <input type="text" placeholder="姓名" style={{borderBottomColor:"red",borderRightColor:"red",borderLeftColor:"red",borderTopColor:"red"}}/>
+                
+                <br></br>
+                <br></br>
+                <input type="text" placeholder="電子信箱" style={{borderColor:"red"}}/>
+                <br></br>
+                <br></br>
+                <input type="text" placeholder="電話號碼" style={{borderColor:"red"}}/>
+                 <submit></submit>
+                 
+                 </from>
+ 
+
+
+            </div>
+
+
+
             </div>
             
 
