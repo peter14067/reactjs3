@@ -62,18 +62,19 @@ class Contact extends React.Component{
 
        </th>
 
-            </table1>
+            </table1 >
             </div>
             <br></br>
             <br></br>
             
-            <div>
-             
+            <div style={{border:"0.5px solid grey",boxShadow:"5px 1px 1px 1px #cccccc"}}>
+          
+           
              <from>
-                 <h1 style={{fontSize:"1em",fontFamily:" DFKai-SB"}} >請輸入您的聯絡資訊:</h1>
-        
-                <input type="text" placeholder="姓名" style={{borderBottomColor:"red",width:"100%",borderRightColor:"red",borderLeftColor:"red",borderTopColor:"red"}} onChange={this.ChangeHandler}/>
-                
+                 <h1 style={{fontSize:"1em",fontFamily:" DFKai-SB"}} >聯絡資訊</h1>
+               
+                <input type="text" placeholder="姓名" style={{marginRight:"1vw",borderBottomColor:"red",width:"100%",borderRightColor:"red",borderLeftColor:"red",borderTopColor:"red"}} onChange={this.ChangeHandler}/>
+               
                 <br></br>
                 <br></br>
                 <input type="text" placeholder="電子信箱" style={{borderColor:"red",width:"100%"}}/>
@@ -84,10 +85,17 @@ class Contact extends React.Component{
                 <br></br>
                 
       
-
+                
              
                 </from>
-
+               
+                </div>
+                
+                
+                
+                <br></br>
+                
+                <div>
                 <form>
                    
                 <select value={this.state.problem} style={{width:"100%"}}>
@@ -100,7 +108,7 @@ class Contact extends React.Component{
                 </select>
                 <br></br>
                 <br></br>
-                <input type='submit' style={{backgroundColor:"Slateblue",color:"white"}}/>
+                <input type='submit' style={{backgroundColor:"Slateblue",color:"white",width:"100%"}}/>
                 </form>
 
 
