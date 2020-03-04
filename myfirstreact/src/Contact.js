@@ -2,6 +2,16 @@ import React from "react"
 import { Form, Button, FormGroup, FormControl, ControlLabel } from "react-bootstrap";
 //import {Form,Col,Row} from 'react-bootstrap/Form'
 class Contact extends React.Component{
+    constructor(props){
+        super(props)
+            this.state={username:''};
+        
+    }
+    ChangeHandler=(event)=>{
+        this.setState({username:event.target.value});
+    }
+
+
     render(){
         return (
         
@@ -56,30 +66,53 @@ class Contact extends React.Component{
             </div>
             <br></br>
             <br></br>
-            <div>
+            
             <div>
              
              <from>
-                 <h1 sty>聯絡資訊</h1>
-                <input type="text" placeholder="姓名" style={{borderBottomColor:"red",borderRightColor:"red",borderLeftColor:"red",borderTopColor:"red"}}/>
+                 <h1 style={{fontSize:"1em",fontFamily:" DFKai-SB"}} >請輸入您的聯絡資訊:</h1>
+        
+                <input type="text" placeholder="姓名" style={{borderBottomColor:"red",width:"100%",borderRightColor:"red",borderLeftColor:"red",borderTopColor:"red"}} onChange={this.ChangeHandler}/>
                 
                 <br></br>
                 <br></br>
-                <input type="text" placeholder="電子信箱" style={{borderColor:"red"}}/>
+                <input type="text" placeholder="電子信箱" style={{borderColor:"red",width:"100%"}}/>
                 <br></br>
                 <br></br>
-                <input type="text" placeholder="電話號碼" style={{borderColor:"red"}}/>
-                 <submit></submit>
-                 
-                 </from>
- 
+                <input type="text" placeholder="電話號碼" style={{borderColor:"red",width:"100%"}}/>
+                <br></br>
+                <br></br>
+                
+      
+
+             
+                </from>
+
+                <form>
+                   
+                <select value={this.state.problem} style={{width:"100%"}}>
+                <option value="產品問題" >產品問題</option>
+                <option value="出貨問題">出貨問題</option>
+             
+
+
+
+                </select>
+                <br></br>
+                <br></br>
+                <input type='submit' style={{backgroundColor:"Slateblue",color:"white"}}/>
+                </form>
+
+
+
+              
 
 
             </div>
 
 
 
-            </div>
+            
             
 
             </div>
