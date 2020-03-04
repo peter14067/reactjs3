@@ -43,18 +43,20 @@ class Contact extends React.Component{
         return (
         
             <div style={{marginTop:"5vh"}}>
-         
-            <p5 style={{marginTop:"5vh",color:"blue",fontSize:"2em"}}>
+          <div style={{border:"0.5px solid grey",boxShadow:"5px 1px 1px 1px #cccccc"}}>
+            <div style={{textAlign:"center",margin:"0px auto",color:"blue",fontSize:"2em"}}>
             客戶服務
-            
-            </p5>
             <br></br>
-            <br></br>
-            親愛的客戶您好，您的問題就是我們的問題，如果有任何疑問或者建議需要我們的協助，歡迎您透過以下任何管道與我們聯繫，我們將竭誠為您服務。
-
-                       <div style={{}} >
-                       <br></br>
-                       <br></br>
+            </div>
+        
+            <div style={{margin:"0px auto",color:"blue",fontSize:"1em"}}>
+            親愛的客戶您好，您的問題就是我們的問題，<br></br>如果有任何疑問或者建議需要我們的協助，<br></br>歡迎您透過以下任何管道與我們聯繫，我們將竭誠為您服務。
+            </div>
+        
+                </div>
+                <br></br>
+                       <div style={{border:"0.5px solid grey",boxShadow:"1px 1px 1px 1px #cccccc"}}>
+                       
             <table1  >
   
             <th >
