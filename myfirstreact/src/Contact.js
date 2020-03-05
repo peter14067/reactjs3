@@ -4,18 +4,92 @@ import { Form, Button, FormGroup, FormControl, ControlLabel } from "react-bootst
 class Contact extends React.Component{
     constructor(props){
         super(props)
-            this.state={username:''};
-            this.state={mail:''};
-            this.state={phone:''};
+            this.state={username:'',mail:'',phone:'',value:'',descript:'12321',text:''};
         
+            this.changeState = this.changeState.bind(this);
+            this.handleChange=this.handleChange.bind(this);
     }
+
+
+    handleChange(event) {
+        this.setState({value: event.target.value});
+      }
+
 
 
     mySubmitHandler=(event)=>{
+        let a1=this.state.username;
+        let a2=this.state.mail;
+        let a3=this.state.phone;
+        let a4=this.state.value;
+            console.log(a1)
+            console.log(a2)
+            console.log(a3)
+            console.log( a4)
         event.preventDefault();
-       
-        alert("姓名:"+this.state.username+"\r"+"電子信箱:"+this.state.mail+"\r"+"電話號碼:"+this.state.phone);
-    }
+       if(this.state.username!="" && this.state.mail!="" && this.state.phone!="" && this.state.value!="" ){
+        alert("姓名:"+this.state.username+"\r"+"電子信箱:"+this.state.mail+"\r"+"電話號碼:"+this.state.phone+"\r"+this.state.value);
+       }else if(this.state.username=="")
+
+       {   
+           if(this.state.mail=="" && this.state.phone=="" && this.state.value=="")
+           alert("姓名，電子信箱，電話號碼，產品問題均未填寫");
+           if(this.state.mail=="" && this.state.phone=="" && this.state.value!="")
+            alert("姓名，電子信箱，電話號碼均未填寫");
+         if(this.state.mail=="" && this.state.phone!="" && this.state.value!="")
+                      alert("姓名，電子信箱未填寫");
+          if(this.state.mail!="" && this.state.phone!="" && this.state.value!="")
+                      alert("姓名未填寫");
+         if(this.state.mail!="" && this.state.phone=="" && this.state.value!="")
+                      alert("姓名，電話號碼未填寫");
+      
+        if(this.state.mail!="" && this.state.phone=="" && this.state.value=="")
+                      alert("姓名，電話號碼，問題類型未填寫");
+        if(this.state.mail!="" && this.state.phone!="" && this.state.value=="")
+                      alert("姓名，問題類型未填寫");
+            if(this.state.mail=="" && this.state.phone!="" && this.state.value=="")
+                      alert("姓名，電子信箱，問題類型未填寫");
+        
+        
+        
+                    }else if(this.state.username!=""){
+
+            if(this.state.mail=="" && this.state.phone=="" && this.state.value=="")
+            alert("電子信箱，電話號碼，產品問題均未填寫");
+            if(this.state.mail=="" && this.state.phone=="" && this.state.value!="")
+             alert("電子信箱，電話號碼均未填寫");
+          if(this.state.mail=="" && this.state.phone!="" && this.state.value!="")
+                       alert("電子信箱未填寫");
+         if(this.state.mail=="" && this.state.phone!="" && this.state.value=="")
+                       alert("電子信箱，問題類型未填寫");
+        if(this.state.mail!="" && this.state.phone=="" && this.state.value!="")
+                       alert("電話號碼未填寫");
+         if(this.state.mail!="" && this.state.phone=="" && this.state.value=="")
+                       alert("電話號碼，問題類型未填寫");                       
+         if(this.state.mail!="" && this.state.phone!="" && this.state.value=="")
+         alert("問題類型未填寫");
+
+
+
+
+            
+        }else if(this.state.mail!=""){
+
+            if(this.state.username=="" && this.state.phone=="" && this.state.value=="")
+            alert("姓名，電話號碼，產品問題均未填寫");
+            if(this.state.username=="" && this.state.phone=="" && this.state.value!="")
+             alert("姓名，電話號碼均未填寫");
+ 
+
+
+            
+        }
+
+
+
+ 
+            
+        }
 
     myChangeHandler = (event) => {
        this.setState({username:event.target.value});
@@ -35,6 +109,12 @@ class Contact extends React.Component{
          
        }
 
+
+       changeState = (event) => {
+        let changeName = event.target.descript
+        this.setState({ [changeName]: event.target.value })
+         
+       }
      
 
 
@@ -99,7 +179,7 @@ class Contact extends React.Component{
             <div style={{border:"0.5px solid grey",boxShadow:"5px 1px 1px 1px #cccccc"}}>
           
            
-             <from>
+             <form>
                  <h1 style={{fontSize:"1em",fontFamily:" DFKai-SB"}} >聯絡資訊</h1>
                
                 <input type="text"   onChange={this.myChangeHandler} placeholder="姓名" style={{marginRight:"1vw",borderBottomColor:"red",width:"100%",borderRightColor:"red",borderLeftColor:"red",borderTopColor:"red"}} />
@@ -116,7 +196,7 @@ class Contact extends React.Component{
       
                 
              
-                </from>
+                </form>
                
                 </div>
                 
@@ -125,18 +205,24 @@ class Contact extends React.Component{
                 <br></br>
                 
                 <div>
-                <form onSubmit={this.mySubmitHandler}>
+                <form>
                    
-                <select value={this.state.problem} style={{width:"100%"}}>
-                <option value="產品問題" >產品問題</option>
+                <select value={this.state.value} onChange={this.handleChange} style={{width:"100%"}}>
+                <option value="產品問題"  >產品問題</option>
                 <option value="出貨問題">出貨問題</option>
-             
+               
 
 
 
                 </select>
                 <br></br>
                 <br></br>
+                <textarea id="descript" name="descript" value={this.state.descript} onChange={this.changeState}>
+                </textarea>
+                </form>
+                <br></br>
+                <br></br>
+                <form onSubmit={(e)=>this.mySubmitHandler(e,this.state)} >
                 <input type='submit' style={{backgroundColor:"Slateblue",color:"white",width:"100%"}}/>
                 </form>
 
@@ -154,7 +240,7 @@ class Contact extends React.Component{
 
             </div>
            
-        ) 
+        ) ;
     }
 }
 export {Contact}

@@ -118,7 +118,7 @@ class About extends React.Component{
            
            
             <div className="demo2-bg" >
-                         <div className="demo2">the beginning< /div>
+                         <div className="demo2">發展過程< /div>
                         
             </div>
 
@@ -135,14 +135,14 @@ class About extends React.Component{
            
              
            
-            <p class="p1">這是檀香，經歷了5年的成長以後，每個檀香都變得很大了</p>
+            <p class="p1"></p>
             </div>
             <br></br>
             <br></br>
             <div class="hover">
             <img src={Logo6} alt="Logo" />
             <img src={Logo5} alt="Logo" />
-            <p class="p1">金新木薑子(佛光樹)，經歷了5年的成長以後，變的金光閃閃了呢~~</p>
+            <p class="p1"></p>
             </div>
          
             
@@ -157,7 +157,7 @@ class About extends React.Component{
            <br></br>
            <br></br>
           
-                         <div className="demo2">now</div>
+                         <div className="demo2">歷年大事</div>
             </div>
 
 
