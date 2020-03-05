@@ -88,7 +88,7 @@ class Test extends React.Component{
           <Card>
           <CardImg width="100%" src={Logo9} alt="Card image cap" />
           <CardTitle>金金</CardTitle>
-          <CardText>Some quick example</CardText>
+          <CardText></CardText>
           </Card>
 
 
