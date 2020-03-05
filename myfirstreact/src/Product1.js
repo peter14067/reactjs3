@@ -88,7 +88,7 @@ class Product1 extends React.Component{
 
 
 
-              <Carousel   class="carousel slide" autoplay={3000} cols={3} rows={1} gap={5} loop  data-ride="carousel">
+              <Carousel   class="carousel slide" autoplay={3000} cols={3} rows={1} gap={5} loop  data-ride="carousel" width="100%">
      
       {
                   album1.map((product,i) => (

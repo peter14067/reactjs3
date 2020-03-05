@@ -217,7 +217,7 @@ class Contact extends React.Component{
                 </select>
                 <br></br>
                 <br></br>
-                <textarea placeholde="請敘述您的問題" id="descript" name="descript" value={this.state.descript} onChange={this.changeState}>
+                <textarea placeholder="請敘述您的問題" id="descript" name="descript" value={this.state.descript} onChange={this.changeState}>
                 </textarea>
                 </form>
                 <br></br>
