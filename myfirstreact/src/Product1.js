@@ -88,26 +88,29 @@ class Product1 extends React.Component{
 
 
 
-              <Carousel   class="carousel slide"  autoplay={3000} cols={3} rows={1} gap={5} >
+              <Carousel   class="carousel slide" cols={3} rows={1} gap={0} loop  data-ride="carousel">
      
+      {
+                  album1.map((product,i) => (
+                    
+                    <Carousel.Item>
+                   
+                  
+                
+                  <Product
+                    product={product}
+                  
+              
+                  />
 
+                    
+                
+                  </Carousel.Item>
 
-              <Carousel.Item> <img width="100%" src={Logo6} alt="Card image cap" /></Carousel.Item>
-              <Carousel.Item> <img width="100%" src={Logo7} alt="Card image cap" /></Carousel.Item>
-              <Carousel.Item> <img width="100%" src={Logo7} alt="Card image cap" /></Carousel.Item>
-              <Carousel.Item> <img width="100%" src={Logo7} alt="Card image cap" /></Carousel.Item>
-              <Carousel.Item> <img width="100%" src={Logo7} alt="Card image cap" /></Carousel.Item>
-              <Carousel.Item> <img width="100%" src={Logo7} alt="Card image cap" /></Carousel.Item>
-              <Carousel.Item> <img width="100%" src={Logo7} alt="Card image cap" /></Carousel.Item>
-              <Carousel.Item> <img width="100%" src={Logo7} alt="Card image cap" /></Carousel.Item>
+                  ))
 
-
-
-
-
-
-
-
+                }
+        
         </Carousel>
 
 

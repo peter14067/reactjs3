@@ -6,6 +6,7 @@ import Logo3 from './112103.jpg';
 import Logo4 from './112104.jpg';
 import Logo5 from './112201.jpg';
 import Logo6 from './pc1.jpg';
+import Maz from './mazep.jpg';
 import AlbumJson from './Album3.json'
 import Product from './Productexample';
 import { Container, Row, Col, Jumbotron, Button, Card, CardImg, CardBlock, CardTitle, CardSubtitle, CardText, Badge, Modal, ModalHeader, ModalBody, ModalFooter, Table, Alert } from 'reactstrap';
@@ -140,7 +141,7 @@ class About extends React.Component{
             <br></br>
             <br></br>
             <div class="hover">
-            <img src={Logo6} alt="Logo" />
+            <img src={Maz} alt="Logo" />
             <img src={Logo5} alt="Logo" />
             <p class="p1"></p>
             </div>
