@@ -4,7 +4,7 @@ import { Form, Button, FormGroup, FormControl, ControlLabel } from "react-bootst
 class Contact extends React.Component{
     constructor(props){
         super(props)
-            this.state={username:'',mail:'',phone:'',value:'',descript:'12321',text:''};
+            this.state={username:'',mail:'',phone:'',value:'',descript:'',text:''};
         
             this.changeState = this.changeState.bind(this);
             this.handleChange=this.handleChange.bind(this);
@@ -28,7 +28,7 @@ class Contact extends React.Component{
             console.log( a4)
         event.preventDefault();
        if(this.state.username!="" && this.state.mail!="" && this.state.phone!="" && this.state.value!="" ){
-        alert("姓名:"+this.state.username+"\r"+"電子信箱:"+this.state.mail+"\r"+"電話號碼:"+this.state.phone+"\r"+this.state.value);
+        alert("姓名:"+this.state.username+"\r"+"電子信箱:"+this.state.mail+"\r"+"電話號碼:"+this.state.phone+"\r\r\r\r"+this.state.value+":\r"+this.state.descript);
        }else if(this.state.username=="")
 
        {   
@@ -111,8 +111,8 @@ class Contact extends React.Component{
 
 
        changeState = (event) => {
-        let changeName = event.target.descript
-        this.setState({ [changeName]: event.target.value })
+     
+        this.setState({descript: event.target.value })
          
        }
      
@@ -217,7 +217,7 @@ class Contact extends React.Component{
                 </select>
                 <br></br>
                 <br></br>
-                <textarea id="descript" name="descript" value={this.state.descript} onChange={this.changeState}>
+                <textarea placeholde="請敘述您的問題" id="descript" name="descript" value={this.state.descript} onChange={this.changeState}>
                 </textarea>
                 </form>
                 <br></br>
