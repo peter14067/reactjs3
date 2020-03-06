@@ -1,6 +1,12 @@
 import React from "react"
 import { Form, Button, FormGroup, FormControl, ControlLabel } from "react-bootstrap";
+import Logo7 from './contact.jpg';
 //import {Form,Col,Row} from 'react-bootstrap/Form'
+
+
+
+
+
 class Contact extends React.Component{
     constructor(props){
         super(props)
@@ -120,9 +126,15 @@ class Contact extends React.Component{
 
 
     render(){
+/*
+        var bg=require('./contact.jpg')
+        <div   style={{marginTop:"5vh",backgroundImage: "url("+bg+")"}}>
+     */
+    
         return (
         
-            <div style={{marginTop:"5vh"}}>
+            <div   style={{marginTop:"5vh"}}>
+     
           <div style={{border:"0.5px solid grey",boxShadow:"5px 1px 1px 1px #cccccc"}}>
             <div style={{textAlign:"center",margin:"0px auto",color:"blue",fontSize:"2em"}}>
             客戶服務

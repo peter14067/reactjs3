@@ -2,32 +2,32 @@
   {
     "id": 1,
     "img": "./112101.jpg",
-    "title": "這是媽媽，這裡大大小小的花圃都是由她負責去澆花，施肥處理的。",
-    "desc": "",
+    "title": "Lydia Ko",
+    "desc": "Main manager",
     "price": 800
   }
  ,
   {
     "id": 2,
     "img": "./112102.jpg",
-    "title": "這是Mary，家裡網站的logo以及藝術上的設計都是由她處理的。",
-    "desc": "",
+    "title": "Mary Chen",
+    "desc": "Art designer",
     "price": ""
   }
  ,
   {
     "id": 3,
     "img": "./112103.jpg",
-    "title": "這是John，當初田裡的植物規劃以及環境整理都是有他負責。",
-    "desc": "",
+    "title": "John Chen",
+    "desc": "Environmental planning",
     "price": ""
   }
 ,
   {
     "id": 4,
     "img": "./112105.jpg",
-    "title": "這是Peter，負責家裡網站規劃的部份",
-    "desc": "",
+    "title": "Peter Chen",
+    "desc": "    Front-end engineer",
     "price": ""
   }
  

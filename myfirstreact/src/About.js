@@ -6,6 +6,7 @@ import Logo3 from './112103.jpg';
 import Logo4 from './112104.jpg';
 import Logo5 from './112201.jpg';
 import Logo6 from './pc1.jpg';
+import Logo7 from './about.jpg';
 import Maz from './mazep.jpg';
 import AlbumJson from './Album3.json'
 import Product from './Productexample';
@@ -57,17 +58,18 @@ class About extends React.Component{
 
 
 
-       
-            <div className="demo2-bg" >
-                         <div className="demo2">About US</div>
-            </div>
+   
             
-
+            <img src={Logo7} alt="Logo" style={{width:"100%"}} />
           
+        
+    
+            <div className="demo2-bg" >
+      <div className="demo2">幸福時機故事</div>
+            </div> 
 
-
-           
-
+              <div style={{textAlign:"center"}}>  <p>幸福時機創立於2015年<br></br>起初是因為興趣開始耕種<br></br>首先種植檀香，羅漢松，金木新疆子，</p></div>
+      
 
 
 
@@ -81,8 +83,8 @@ class About extends React.Component{
                     <Row>
                 {
                   album.map(product => (
-                    <Col sm={6} md={4} className="mb-3">
-                  <Product
+                    <Col sm={6} md={4} className="mb-3" style={{textAlign:"center",fontFamily:"bold",fontSize:"2em"}}>
+                  <Product 
                     product={product}
                    
                    
