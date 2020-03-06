@@ -71,7 +71,7 @@ class Test extends React.Component{
 					
 				
                     
-					<img src={item.src} alt={item.altText} style={{maxHeight:"400px",maxHeight:"400px"}}/>
+					<img src={item.src} alt={item.altText} style={{ maxWidth:"100%",   height:"auto"}} />
 					<CarouselCaption captionText={item.caption} captionHeader={item.caption} />
 				</CarouselItem>
 			);
@@ -80,12 +80,12 @@ class Test extends React.Component{
 		return (
 			<div  >
 				
-				<Carousel
+				<Carousel 
 					activeIndex={activeIndex}
 					next={this.next}
 					previous={this.previous}
 				>
-					<CarouselIndicators items={items} activeIndex={activeIndex} onClickHandler={this.goToIndex} />
+					<CarouselIndicators  items={items} activeIndex={activeIndex} onClickHandler={this.goToIndex} />
 					{slides}
 					<CarouselControl direction='prev' directionText='Previous' onClickHandler={this.previous} />
 					<CarouselControl direction='next' directionText='Next' onClickHandler={this.next} />
