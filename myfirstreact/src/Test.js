@@ -89,10 +89,9 @@ scrollToAnchor = (anchorName) => {
 					
 				
                     <a onClick={()=>this.scrollToAnchor(('screens')+item.id)}>
-					<img src={item.src} style={{maxWidth:"500px",height:"600px"}}   />
-            <button type="button">{item.id}</button>
-					<CarouselCaption captionText={item.caption} captionHeader={item.caption} />
+					<button type="button" id={Item.id}><img src={item.src} style={{maxWidth:"500px",height:"auto"}}   /></button>
                     </a>
+					<CarouselCaption captionText={item.caption} captionHeader={item.caption} />
 				</CarouselItem>
 
                 
