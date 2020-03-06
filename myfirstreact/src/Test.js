@@ -72,7 +72,7 @@ class Test extends React.Component{
 					
 				
                     
-					<img src={item.src}  style={{ maxWidth:"100%",   maxHeight:"auto"}} />
+					<img src={item.src}  style={{ maxWidth:"100%",   maxHeight:"100%"}} />
 					<CarouselCaption captionText={item.caption} captionHeader={item.caption} />
 				</CarouselItem>
 			);
