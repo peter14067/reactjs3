@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "c8817a2faacb515eea85ac95acd777d7",
+    "revision": "20fa1ebdc3ee6d84be7362d4e84731da",
     "url": "/reactjs3/index.html"
   },
   {
-    "revision": "a68d50a533b5bf1f4d46",
+    "revision": "c8213dfb2bc216958738",
     "url": "/reactjs3/static/css/2.a9858c30.chunk.css"
   },
   {
-    "revision": "8ae64c64613d2685d90c",
+    "revision": "4c4b87508d634a16d9ae",
     "url": "/reactjs3/static/css/main.42395152.chunk.css"
   },
   {
-    "revision": "a68d50a533b5bf1f4d46",
-    "url": "/reactjs3/static/js/2.6dd3b6b3.chunk.js"
+    "revision": "c8213dfb2bc216958738",
+    "url": "/reactjs3/static/js/2.e70f70a3.chunk.js"
   },
   {
-    "revision": "8ae64c64613d2685d90c",
-    "url": "/reactjs3/static/js/main.5f4076c3.chunk.js"
+    "revision": "4c4b87508d634a16d9ae",
+    "url": "/reactjs3/static/js/main.fa0798f0.chunk.js"
   },
   {
     "revision": "8286a68b30e2cde06632",
@@ -42,6 +42,14 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "37e26a5638df6076b78f132de065eb57",
     "url": "/reactjs3/static/media/112201.37e26a56.jpg"
+  },
+  {
+    "revision": "86c3ef050dc2c36c9cae205ac3692a04",
+    "url": "/reactjs3/static/media/Chrysanthemum-bottle.86c3ef05.jpg"
+  },
+  {
+    "revision": "675276701f0dcfb9993d9244c8653399",
+    "url": "/reactjs3/static/media/Chrysanthemum.67527670.jpg"
   },
   {
     "revision": "3b9cde0a8fd3ba97761caa98893b2e46",
