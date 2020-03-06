@@ -7,18 +7,19 @@ import Logo6 from './pc7.jpg';
 import Logo7 from './pc8.jpg';
 import Logo8 from './pc9.jpg';
 import Logo9 from './pc10.jpg';
-
+import Logo10 from './Chrysanthemum.jpg';
+import Logo11 from './Chrysanthemum-bottle.jpg';
 
 //import {Form,Col,Row} from 'react-bootstrap/Form'
 
 const items = [
 	{
-		src:Logo7 ,
+		src:Logo10 ,
 		//altText: 'Slide 1',
 		//caption: 'Slide 1'
 	},
 	{
-		src: Logo8,
+		src: Logo11,
 		//altText: 'Slide 2',
 		//caption: 'Slide 2'
 	},
@@ -71,7 +72,7 @@ class Test extends React.Component{
 					
 				
                     
-					<img src={item.src} alt={item.altText} style={{ maxWidth:"100%",   height:"auto"}} />
+					<img src={item.src}  style={{ maxWidth:"100%",   maxHeight:"auto"}} />
 					<CarouselCaption captionText={item.caption} captionHeader={item.caption} />
 				</CarouselItem>
 			);
