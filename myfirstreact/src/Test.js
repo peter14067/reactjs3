@@ -78,9 +78,10 @@ scrollToAnchor = (anchorName) => {
     render(){
         const { activeIndex } = this.state;
 
-
-        
-     
+/*
+        <img src={item.src} style={{maxWidth:"100%",height:"auto"}}   />
+        <button type="button" style={{width:"100%"}}></button>
+     */
 
 		const slides = items.map((item) => {
 			return (
@@ -90,7 +91,7 @@ scrollToAnchor = (anchorName) => {
 				
                     <a onClick={()=>this.scrollToAnchor(('screens')+item.id)}>
 					<img src={item.src} style={{maxWidth:"100%",height:"auto"}}   />
-            <button type="button" style={{width:"100%"}}>{item.id}</button>
+          
 					<CarouselCaption captionText={item.caption} captionHeader={item.caption} />
                     </a>
 				</CarouselItem>
