@@ -14,19 +14,15 @@ import Logo9 from './pc10.jpg';
 const items = [
 	{
 		src:Logo7 ,
-		altText: 'Slide 1',
-		caption: 'Slide 1'
+		//altText: 'Slide 1',
+		//caption: 'Slide 1'
 	},
 	{
 		src: Logo8,
-		altText: 'Slide 2',
-		caption: 'Slide 2'
+		//altText: 'Slide 2',
+		//caption: 'Slide 2'
 	},
-	{
-		src: Logo9,
-		altText: 'Slide 3',
-		caption: 'Slide 3'
-	}
+
 ];
 
 
@@ -70,19 +66,19 @@ class Test extends React.Component{
 
 		const slides = items.map((item) => {
 			return (
-				<CarouselItem
-					onExiting={this.onExiting}
-					onExited={this.onExited}
-					key={item.src}
-				>
-					<img src={item.src} alt={item.altText} />
+                
+				<CarouselItem >
+					
+				
+                    
+					<img src={item.src} alt={item.altText} style={{maxHeight:"400px",maxHeight:"400px"}}/>
 					<CarouselCaption captionText={item.caption} captionHeader={item.caption} />
 				</CarouselItem>
 			);
 		});
 
 		return (
-			<div style={{width:"100%"}}>
+			<div  >
 				
 				<Carousel
 					activeIndex={activeIndex}
