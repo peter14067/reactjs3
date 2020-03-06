@@ -22,14 +22,13 @@ export default class Product extends Component {
 
         return(
           
-          <div width="100%">
+          <div style={{maxWidth:"100%",maxHeight:"100%"}}>
               <Card  >
-                    <CardImg width=" 100%" height="50%"
-     style={{margin:"0",padding:"0"}} src={product.img} alt="Card image cap"/>
+                    <CardImg style={{margin:"0",padding:"0",maxWidth:"100%",Height:"5vh"}} src={product.img} alt="Card image cap"/>
 
-                <CardTitle>{product.title} </CardTitle>
+                <CardTitle style={{fontSize:"0.5em"}}>{product.title} </CardTitle>
                 
-          <CardText>{product.desc}</CardText>
+          <CardText style={{fontSize:"0.5em",color:"grey"}}>{product.desc}</CardText>
          
      
           </Card>

@@ -64,20 +64,61 @@ class About extends React.Component{
           
         
     
-            <div className="demo2-bg" >
-      <div className="demo2">幸福時機故事</div>
-            </div> 
-
               <div style={{textAlign:"center"}}>  <p>幸福時機創立於2015年<br></br>起初是因為興趣開始耕種<br></br>首先種植檀香，羅漢松，金木新疆子，</p></div>
       
+
+   
+
+ 
+            <div className="demo2-bg" >
+                         <div className="demo2">發展過程< /div>
+                        
+            </div>
+
+
+
+
+
+            <div style={{backgroundColor:"#33C496",height:"120vh",borderTop:"2px solid white"}}>
+            
+            <div class="hover">
+            
+            <img src={Logo5} alt="Logo" />
+            <img src={Logo6} alt="Logo" /> 
+           
+             
+           
+            <p class="p1"></p>
+            </div>
+            <br></br>
+            <br></br>
+            <div class="hover">
+            <img src={Maz} alt="Logo" />
+            <img src={Logo5} alt="Logo" />
+            <p class="p1"></p>
+            </div>
+         
+            
+         
+           
+            </div>
+        
+
+
+
+            <div className="demo2-bg" >
+                         <div className="demo2">成員介紹< /div>
+                        
+            </div>
+
+
 
 
 
               <Row>
                 <Col md={12}>
                   <Jumbotron>
-                    <h1  style={{textAlign:"center",color:"red",}}>家庭成員介紹</h1>
-                   
+                    
 
 
                     <Row>
@@ -119,40 +160,7 @@ class About extends React.Component{
 
            
            
-           
-            <div className="demo2-bg" >
-                         <div className="demo2">發展過程< /div>
-                        
-            </div>
-
-
-
-
-
-            <div style={{backgroundColor:"#33C496",height:"120vh",borderTop:"2px solid white"}}>
-            
-            <div class="hover">
-            
-            <img src={Logo5} alt="Logo" />
-            <img src={Logo6} alt="Logo" /> 
-           
-             
-           
-            <p class="p1"></p>
-            </div>
-            <br></br>
-            <br></br>
-            <div class="hover">
-            <img src={Maz} alt="Logo" />
-            <img src={Logo5} alt="Logo" />
-            <p class="p1"></p>
-            </div>
-         
-            
-         
-           
-            </div>
-        
+          
             <div className="demo2-bg" style={{marginBottom:"10"}}>
 
                 
