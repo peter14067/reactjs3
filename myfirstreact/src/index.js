@@ -36,7 +36,7 @@ class Main extends React.Component {
                       <Link class="Nav_link" to="/PTdescription" >產品購買</Link>
                       <Link class="Nav_link" to="/Contact" >聯絡我們</Link>
                       <Link class="Nav_link" to="/Product1" >植物介紹</Link>
-                      <Link class="Nav_link" to="/test" >測試</Link>
+                      <Link class="Nav_link" to="/Test" >測試</Link>
                   </table>
                 
                  
