@@ -9,6 +9,11 @@ import Logo7 from './pc8.jpg';
 import Logo8 from './pc9.jpg';
 import Logo9 from './pc10.jpg';
 import Logo10 from './Chrysanthemum.jpg';
+import Pc3 from './Chrysanthemumflower.jpg';
+import Tea from './Tea.png';
+import Tea1 from './Tea1.png';
+import Tea2 from './Tea2.png';
+import Tea3 from './Tea3.png';
 import Logo11 from './Chrysanthemum-bottle.jpg';
 import { Item } from "react-grid-carousel";
 
@@ -23,6 +28,12 @@ const items = [
 	},
 	{
         src: Logo3,
+        id:1,
+		//altText: 'Slide 2',
+		//caption: 'Slide 2'
+	},
+	{
+        src:Pc3,
         id:1,
 		//altText: 'Slide 2',
 		//caption: 'Slide 2'
@@ -169,9 +180,13 @@ scrollToAnchor = (anchorName) => {
 		  <div style={{marginTop:"10vh"}}>
 			  <img></img>
 		<h1>金新木薑子</h1>
-		<p style={{color:"blue"}}>觀賞用</p>
-		照顧方式:
- 
+		<p style={{color:"blue"}}>(觀賞用)</p>
+
+
+
+		佛光樹又名七寶樹，學名則是丹山新木薑子，也有人稱之為金新木薑子，由於它的嫩梢枝葉披上金黃色的絨毛，在太陽光及月光下均能發光，故名佛光樹。
+		<br></br><br></br>
+		<p style={{color:"blue"}}>照顧方式</p>
 
  日照:適合全日照且溫暖環境
  
@@ -187,29 +202,28 @@ scrollToAnchor = (anchorName) => {
  
  繁殖:繁殖採用播種法或扦插法，要扦插繁殖時，應慎選新葉毛色亮麗的個體。
 </div>
-            <br></br> <br></br> <br></br> <br></br> <br></br> <br></br> <br></br> <br></br> <br></br> <br></br> <br></br> <br></br> <br></br> <br></br> <br></br> <br></br> <br></br> <br></br> <br></br> <br></br> <br></br> <br></br>
-<a id="screens4">	
-‧英文名稱：	Florist's Daisy，Chrysanthemum Flower，Chrysanthemum
-‧學   名：	Chrysanthemum x morifolium Ramat. (pro sp.)
-Chrysanthemum morifolium Ramat.
-Chrysanthemum morifolium
-‧科   名：	菊科( Compositae)菊屬(Chrysanthemum)
-‧別   名：	白菊花、滁菊花、亳菊、貢菊、懷菊花、菊花、杭菊花
-‧原產地：	中國大陸，藥用菊花以河南、安徽、浙江栽培最多，品種多達二千種以上。
-‧分布：	栽培。台灣主要產地為苗栗縣銅鑼鄉九湖村。
-‧用   途：	1.觀賞用：可作切花用、盆花用或花壇布置用。2.食用：杭菊是「菊花茶」的主要原料，經烘焙後可作香料、藥用，自古以來沖泡菊花茶當養生保健飲料，經濟價值極高。3.藥用：性味：花：甘、苦、涼；葉：辛、甘、平。效用：花：疏風清熱，平肝明目，解毒消腫。治頭痛，眩暈，目赤，腫毒；葉：治疔瘡，頭風，目眩。散風清熱，平肝明目。用於治風熱感冒、頭痛眩暈、目赤腫痛、眼目昏花。
-‧莖：	高 60~100 公分；莖直立，分枝或不分枝，被柔毛。
-‧葉：	葉互生；有短柄；葉片卵形至披針形，長 5~15 公分，羽狀淺裂或半裂，基部楔形，下面被白色短柔毛。
-‧花：	頭狀花序直徑約 2~3 公分，單個或數個集生於莖枝頂端；萼片內外兩層，每層 3 片，外層 3 片交疊於內層 3 片中間，共 6 片；總苞片多層，外層綠色，條形，邊緣膜質，外面被柔毛；舌狀花白色、紅色、紫色或黃色，大小總數約 270 片。花期 9~12 月。
-‧果：	瘦果不發育。
-‧特徵：	杭菊為多年生草本，高 60~100 公分；莖直立，分枝或不分枝，被柔毛。葉互生；有短柄；葉片卵形至披針形，長 5~15 公分，羽狀淺裂或半裂，基部楔形，下面被白色短柔毛。頭狀花序直徑約 2~3 公分，單個或數個集生於莖枝頂端；萼片內外兩層，每層 3 片，外層 3 片交疊於內層 3 片中間，共 6 片；總苞片多層，外層綠色，條形，邊緣膜質，外面被柔毛；舌狀花白色、紅色、紫色或黃色，大小總數約 270 片。瘦果不發育。花期 9~12 月。為栽培種，培育的品種極多，頭狀花序多變化，花色有白、黃。藥用菊花以河南、安徽、浙江栽培最多。
-‧更多資料：	
-http://plant.tesri.gov.tw/plant100/WebPlantDetail.aspx?tno=539026110 菊花
-中國植物誌 第 76(1) 卷 035 頁 PDF 菊花(參考)
-臺灣藥用植物資源名錄 行政院衛生署中醫藥委員會 編 菊 92年10月453頁
+       
 
-‧拍攝地點：	苗栗縣銅鑼鄉九湖村(961116)
-            </a>
+<a id="screens2">
+			  </a>
+		  <div style={{marginTop:"10vh"}}>
+		  <img src={Pc3} style={{maxWidth:"50%",height:"auto"}}   />
+		<h1>杭菊</h1>
+
+			<br></br>
+			<h2 style={{color:"green"}}>杭菊多元化產品</h2>
+
+		　杭菊可與多種飲料搭配沖泡，其風味各有不同，以下提供幾種簡單配法，沖泡時可依個人口味調整。喜歡清香淡雅口味的人，可將杭菊搭配綠茶、包種茶或烏龍茶一起沖泡，偏好濃郁甘潤口感的，則可混搭潽洱茶、紅烏龍或紅茶，當然也可以來些特別口味，例如將杭菊加至咖啡粉中，用手沖的方式泡出杭菊咖啡，來杯不一樣的咖啡。杭菊百搭，大家不妨多多嘗試，找出自己喜好的風味吧！
+			<br></br>
+		<img src={Tea} style={{maxWidth:"25%",height:"auto"}}   />
+		<img src={Tea1} style={{maxWidth:"25%",height:"auto"}}   />
+		<img src={Tea2} style={{maxWidth:"25%",height:"auto"}}   />
+		<img src={Tea3} style={{maxWidth:"25%",height:"auto"}}   />
+
+</div>
+
+
+
             </div>
 		);
 	}

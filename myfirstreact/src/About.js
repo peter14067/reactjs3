@@ -6,6 +6,8 @@ import Logo3 from './112103.jpg';
 import Logo4 from './112104.jpg';
 import Logo5 from './112201.jpg';
 import Logo6 from './pc1.jpg';
+import Gold1 from './gold1.jpg';
+import Gold2 from './gold2.jpg';
 import Logo7 from './about.jpg';
 import Maz from './mazep.jpg';
 import AlbumJson from './Album3.json'
@@ -99,6 +101,23 @@ class About extends React.Component{
             </div>
             <br></br>
             <br></br>
+
+            <div >
+            <Card style={{maxWidth:"50%",height:"auto",float:"left",border:"none"}}><img src={Gold1} alt="Logo" style={{maxWidth:"100%",height:"auto"}}/>
+            <CardTitle style={{textAlign:"center"}}>佛光樹(2014/04/05)</CardTitle>
+            </Card>
+
+            <Card style={{maxWidth:"50%",height:"auto",border:"none"}}><img src={Gold2} alt="Logo" style={{maxWidth:"100%",height:"auto"}}/>
+            <CardTitle style={{textAlign:"center"}}>佛光樹(2020/02/02)</CardTitle>
+            </Card>
+            </div>
+            <br></br>
+            <br></br>
+
+
+
+
+
             <div style={{backgroundColor:"#33C496",height:"120vh",borderTop:"2px solid white"}}>
             <div class="hover">
             <img src={Maz} alt="Logo" />
