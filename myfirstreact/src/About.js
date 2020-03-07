@@ -34,8 +34,16 @@ class About extends React.Component{
    
 
 
-
-
+/*
+      <div class="hover">
+            
+            <img src={Logo5} alt="Logo" />
+            <img src={Logo6} alt="Logo" /> 
+           
+             
+           
+            <p class="p1">123</p>
+*/
             
         <div >
 
@@ -79,23 +87,23 @@ class About extends React.Component{
 
 
 
-            <div style={{backgroundColor:"#33C496",height:"120vh",borderTop:"2px solid white"}}>
-            
-            <div class="hover">
-            
-            <img src={Logo5} alt="Logo" />
-            <img src={Logo6} alt="Logo" /> 
            
-             
-           
-            <p class="p1"></p>
+            <div >
+            <Card style={{maxWidth:"50%",height:"auto",float:"left",border:"none"}}><img src={Logo5} alt="Logo" style={{maxWidth:"100%",height:"auto"}}/>
+            <CardTitle style={{textAlign:"center"}}>檀香(2014/04/05)</CardTitle>
+            </Card>
+
+            <Card style={{maxWidth:"50%",height:"auto",border:"none"}}><img src={Logo6} alt="Logo" style={{maxWidth:"100%",height:"auto"}}/>
+            <CardTitle style={{textAlign:"center"}}>檀香(2020/02/02)</CardTitle>
+            </Card>
             </div>
             <br></br>
             <br></br>
+            <div style={{backgroundColor:"#33C496",height:"120vh",borderTop:"2px solid white"}}>
             <div class="hover">
             <img src={Maz} alt="Logo" />
             <img src={Logo5} alt="Logo" />
-            <p class="p1"></p>
+            <p class="p1">123</p>
             </div>
          
             

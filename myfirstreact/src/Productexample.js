@@ -26,9 +26,9 @@ export default class Product extends Component {
               <Card  >
                     <CardImg style={{margin:"0",padding:"0",maxWidth:"100%",Height:"5vh"}} src={product.img} alt="Card image cap"/>
 
-                <CardTitle style={{fontSize:"0.5em"}}>{product.title} </CardTitle>
+                <CardTitle style={{fontSize:"0.6em"}}>{product.title} </CardTitle>
                 
-          <CardText style={{fontSize:"0.5em",color:"grey"}}>{product.desc}</CardText>
+          <CardText style={{fontSize:"0.4em",color:"grey"}}>{product.desc}</CardText>
          
      
           </Card>
