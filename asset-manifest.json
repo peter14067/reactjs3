@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/reactjs3/static/css/main.42395152.chunk.css",
-    "main.js": "/reactjs3/static/js/main.fbdf5bd9.chunk.js",
-    "main.js.map": "/reactjs3/static/js/main.fbdf5bd9.chunk.js.map",
+    "main.js": "/reactjs3/static/js/main.1a2aaab2.chunk.js",
+    "main.js.map": "/reactjs3/static/js/main.1a2aaab2.chunk.js.map",
     "runtime-main.js": "/reactjs3/static/js/runtime-main.dee3809d.js",
     "runtime-main.js.map": "/reactjs3/static/js/runtime-main.dee3809d.js.map",
     "static/css/2.a9858c30.chunk.css": "/reactjs3/static/css/2.a9858c30.chunk.css",
-    "static/js/2.f3a842bc.chunk.js": "/reactjs3/static/js/2.f3a842bc.chunk.js",
-    "static/js/2.f3a842bc.chunk.js.map": "/reactjs3/static/js/2.f3a842bc.chunk.js.map",
+    "static/js/2.d3a79c23.chunk.js": "/reactjs3/static/js/2.d3a79c23.chunk.js",
+    "static/js/2.d3a79c23.chunk.js.map": "/reactjs3/static/js/2.d3a79c23.chunk.js.map",
     "index.html": "/reactjs3/index.html",
-    "precache-manifest.4725b166da3b7f85423da3e78f85402b.js": "/reactjs3/precache-manifest.4725b166da3b7f85423da3e78f85402b.js",
+    "precache-manifest.4fdebb86785f9ede76000472877a4deb.js": "/reactjs3/precache-manifest.4fdebb86785f9ede76000472877a4deb.js",
     "service-worker.js": "/reactjs3/service-worker.js",
     "static/css/2.a9858c30.chunk.css.map": "/reactjs3/static/css/2.a9858c30.chunk.css.map",
     "static/css/main.42395152.chunk.css.map": "/reactjs3/static/css/main.42395152.chunk.css.map",
@@ -20,8 +20,15 @@
     "static/media/112201.jpg": "/reactjs3/static/media/112201.37e26a56.jpg",
     "static/media/Chrysanthemum-bottle.jpg": "/reactjs3/static/media/Chrysanthemum-bottle.86c3ef05.jpg",
     "static/media/Chrysanthemum.jpg": "/reactjs3/static/media/Chrysanthemum.67527670.jpg",
+    "static/media/Chrysanthemumflower.jpg": "/reactjs3/static/media/Chrysanthemumflower.2166c324.jpg",
+    "static/media/Tea.png": "/reactjs3/static/media/Tea.c998c151.png",
+    "static/media/Tea1.png": "/reactjs3/static/media/Tea1.f54f4f67.png",
+    "static/media/Tea2.png": "/reactjs3/static/media/Tea2.0c945180.png",
+    "static/media/Tea3.png": "/reactjs3/static/media/Tea3.75f86dab.png",
     "static/media/about.jpg": "/reactjs3/static/media/about.3b9cde0a.jpg",
     "static/media/contact.jpg": "/reactjs3/static/media/contact.f49c7d5c.jpg",
+    "static/media/gold1.jpg": "/reactjs3/static/media/gold1.433fa5be.jpg",
+    "static/media/gold2.jpg": "/reactjs3/static/media/gold2.b0e846f0.jpg",
     "static/media/mazep.jpg": "/reactjs3/static/media/mazep.96a1a830.jpg",
     "static/media/about.css": "/reactjs3/static/media/pc11.dd861778.jpg",
     "static/media/pc10.jpg": "/reactjs3/static/media/pc10.8e36425c.jpg",
@@ -37,8 +44,8 @@
   "entrypoints": [
     "static/js/runtime-main.dee3809d.js",
     "static/css/2.a9858c30.chunk.css",
-    "static/js/2.f3a842bc.chunk.js",
+    "static/js/2.d3a79c23.chunk.js",
     "static/css/main.42395152.chunk.css",
-    "static/js/main.fbdf5bd9.chunk.js"
+    "static/js/main.1a2aaab2.chunk.js"
   ]
 }

@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "3a334e8864056800f84b2849111ec798",
+    "revision": "661352b3bae0e3909480aa46fbdae0d9",
     "url": "/reactjs3/index.html"
   },
   {
-    "revision": "01dba1a5f066503f5ed8",
+    "revision": "178145c589265ff708d6",
     "url": "/reactjs3/static/css/2.a9858c30.chunk.css"
   },
   {
-    "revision": "97560cd78480355236c5",
+    "revision": "9cb8b1755c2d26d198f1",
     "url": "/reactjs3/static/css/main.42395152.chunk.css"
   },
   {
-    "revision": "01dba1a5f066503f5ed8",
-    "url": "/reactjs3/static/js/2.f3a842bc.chunk.js"
+    "revision": "178145c589265ff708d6",
+    "url": "/reactjs3/static/js/2.d3a79c23.chunk.js"
   },
   {
-    "revision": "97560cd78480355236c5",
-    "url": "/reactjs3/static/js/main.fbdf5bd9.chunk.js"
+    "revision": "9cb8b1755c2d26d198f1",
+    "url": "/reactjs3/static/js/main.1a2aaab2.chunk.js"
   },
   {
     "revision": "8286a68b30e2cde06632",
@@ -52,12 +52,40 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/reactjs3/static/media/Chrysanthemum.67527670.jpg"
   },
   {
+    "revision": "2166c3248494e39234537f7a76eb49ec",
+    "url": "/reactjs3/static/media/Chrysanthemumflower.2166c324.jpg"
+  },
+  {
+    "revision": "c998c1511e5b44958fd798db2a182899",
+    "url": "/reactjs3/static/media/Tea.c998c151.png"
+  },
+  {
+    "revision": "f54f4f67ed27322de4b75a62d19791f1",
+    "url": "/reactjs3/static/media/Tea1.f54f4f67.png"
+  },
+  {
+    "revision": "0c94518046dbbc518c8e4c10ecebc59b",
+    "url": "/reactjs3/static/media/Tea2.0c945180.png"
+  },
+  {
+    "revision": "75f86dab209b5d6fb96f17674a698873",
+    "url": "/reactjs3/static/media/Tea3.75f86dab.png"
+  },
+  {
     "revision": "3b9cde0a8fd3ba97761caa98893b2e46",
     "url": "/reactjs3/static/media/about.3b9cde0a.jpg"
   },
   {
     "revision": "f49c7d5c9c67af895f89c93c24046fef",
     "url": "/reactjs3/static/media/contact.f49c7d5c.jpg"
+  },
+  {
+    "revision": "433fa5bebbcd573a912e41d2462f1f5d",
+    "url": "/reactjs3/static/media/gold1.433fa5be.jpg"
+  },
+  {
+    "revision": "b0e846f083725467767f2ece4b956ce5",
+    "url": "/reactjs3/static/media/gold2.b0e846f0.jpg"
   },
   {
     "revision": "96a1a8305b1e2d0f1a63d30187aeef29",
