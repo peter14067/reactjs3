@@ -2,6 +2,7 @@ import React from "react"
 import { Form, Button, FormGroup, FormControl, ControlLabel } from "react-bootstrap";
 import {Carousel,CarouselCaption,CarouselItem,CarouselControl,CarouselIndicators } from "reactstrap";
 import Logo1 from './pc1.jpg';
+import Logo3 from './pc3.jpg'
 import Logo5 from './pc6.jpg';
 import Logo6 from './pc7.jpg';
 import Logo7 from './pc8.jpg';
@@ -21,7 +22,7 @@ const items = [
 		//caption: 'Slide 1'
 	},
 	{
-        src: Logo9,
+        src: Logo3,
         id:1,
 		//altText: 'Slide 2',
 		//caption: 'Slide 2'
@@ -140,10 +141,11 @@ scrollToAnchor = (anchorName) => {
           <a id="screens0">
 			  </a>
 		  <div style={{marginTop:"10vh"}}>
-			  中文名稱：	杭菊                                                    更多杭菊
+		  <img src={Logo1} style={{maxWidth:"50%",height:"auto"}}   />
+		<h1>檀香</h1>
 		  （一）檀香的心理功效
 
-久聞檀香放鬆效果絕佳，可安撫神經緊張及焦慮，鎮靜的效果多於振奮。在用於改善執迷狀態上，極獲好評。給人祥和、平靜的感覺。
+久聞檀香放鬆效果絕佳，可安撫神經緊張及焦慮，鎮靜的效果多於振奮。在用於改善執迷狀態上，極獲好評。給人祥和、平靜的感覺。<br></br><br></br>
 
 （二）檀香的生理功效
 
@@ -155,61 +157,36 @@ scrollToAnchor = (anchorName) => {
 
 （4）對過敏性皮膚有預防作用，對干性濕疹及老化缺水的皮膚特別有益。使皮膚柔軟，改善皮膚發癢或發炎的現象。
 
-（5）久用檀香香製品能助於睡眠。
+（5）久用檀香香製品能助於睡眠。<br></br><br></br>
 
 （三）檀香的美容功效
 
 檀香精油適合老化、缺水及乾燥的肌膚，能促進肌膚新陳代謝，加快肌膚細胞的更新生長，並能加速傷口與疤痕的修復與癒合，幫助修護受損的肌膚細胞，同時，還具有良好的抗菌作用，可以改善肌膚發炎、發癢的狀況，消炎祛痘。所以,可以自制檀香面膜改善自己的肌膚。
+</div>
 
-<br></br> <br></br> <br></br> <br></br> <br></br> <br></br> <br></br> <br></br> <br></br> <br></br> <br></br> <br></br> <br></br> <br></br> <br></br> <br></br> <br></br> <br></br> <br></br> <br></br> <br></br> <br></br>
-<a id="screens1">	
-‧英文名稱：	Florist's Daisy，Chrysanthemum Flower，Chrysanthemum
-‧學   名：	Chrysanthemum x morifolium Ramat. (pro sp.)
-Chrysanthemum morifolium Ramat.
-Chrysanthemum morifolium
-‧科   名：	菊科( Compositae)菊屬(Chrysanthemum)
-‧別   名：	白菊花、滁菊花、亳菊、貢菊、懷菊花、菊花、杭菊花
-‧原產地：	中國大陸，藥用菊花以河南、安徽、浙江栽培最多，品種多達二千種以上。
-‧分布：	栽培。台灣主要產地為苗栗縣銅鑼鄉九湖村。
-‧用   途：	1.觀賞用：可作切花用、盆花用或花壇布置用。2.食用：杭菊是「菊花茶」的主要原料，經烘焙後可作香料、藥用，自古以來沖泡菊花茶當養生保健飲料，經濟價值極高。3.藥用：性味：花：甘、苦、涼；葉：辛、甘、平。效用：花：疏風清熱，平肝明目，解毒消腫。治頭痛，眩暈，目赤，腫毒；葉：治疔瘡，頭風，目眩。散風清熱，平肝明目。用於治風熱感冒、頭痛眩暈、目赤腫痛、眼目昏花。
-‧莖：	高 60~100 公分；莖直立，分枝或不分枝，被柔毛。
-‧葉：	葉互生；有短柄；葉片卵形至披針形，長 5~15 公分，羽狀淺裂或半裂，基部楔形，下面被白色短柔毛。
-‧花：	頭狀花序直徑約 2~3 公分，單個或數個集生於莖枝頂端；萼片內外兩層，每層 3 片，外層 3 片交疊於內層 3 片中間，共 6 片；總苞片多層，外層綠色，條形，邊緣膜質，外面被柔毛；舌狀花白色、紅色、紫色或黃色，大小總數約 270 片。花期 9~12 月。
-‧果：	瘦果不發育。
-‧特徵：	杭菊為多年生草本，高 60~100 公分；莖直立，分枝或不分枝，被柔毛。葉互生；有短柄；葉片卵形至披針形，長 5~15 公分，羽狀淺裂或半裂，基部楔形，下面被白色短柔毛。頭狀花序直徑約 2~3 公分，單個或數個集生於莖枝頂端；萼片內外兩層，每層 3 片，外層 3 片交疊於內層 3 片中間，共 6 片；總苞片多層，外層綠色，條形，邊緣膜質，外面被柔毛；舌狀花白色、紅色、紫色或黃色，大小總數約 270 片。瘦果不發育。花期 9~12 月。為栽培種，培育的品種極多，頭狀花序多變化，花色有白、黃。藥用菊花以河南、安徽、浙江栽培最多。
-‧更多資料：	
-http://plant.tesri.gov.tw/plant100/WebPlantDetail.aspx?tno=539026110 菊花
-中國植物誌 第 76(1) 卷 035 頁 PDF 菊花(參考)
-臺灣藥用植物資源名錄 行政院衛生署中醫藥委員會 編 菊 92年10月453頁
+<a id="screens1">
+			  </a>
+		  <div style={{marginTop:"10vh"}}>
+			  <img></img>
+		<h1>金新木薑子</h1>
+		<p style={{color:"blue"}}>觀賞用</p>
+		照顧方式:
+ 
 
-‧拍攝地點：	苗栗縣銅鑼鄉九湖村(961116)
-            </a>
-
-			</div>
-            <br></br> <br></br> <br></br> <br></br> <br></br> <br></br> <br></br> <br></br> <br></br> <br></br> <br></br> <br></br> <br></br> <br></br> <br></br> <br></br> <br></br> <br></br> <br></br> <br></br> <br></br> <br></br>
-<a id="screens1">	
-‧英文名稱：	Florist's Daisy，Chrysanthemum Flower，Chrysanthemum
-‧學   名：	Chrysanthemum x morifolium Ramat. (pro sp.)
-Chrysanthemum morifolium Ramat.
-Chrysanthemum morifolium
-‧科   名：	菊科( Compositae)菊屬(Chrysanthemum)
-‧別   名：	白菊花、滁菊花、亳菊、貢菊、懷菊花、菊花、杭菊花
-‧原產地：	中國大陸，藥用菊花以河南、安徽、浙江栽培最多，品種多達二千種以上。
-‧分布：	栽培。台灣主要產地為苗栗縣銅鑼鄉九湖村。
-‧用   途：	1.觀賞用：可作切花用、盆花用或花壇布置用。2.食用：杭菊是「菊花茶」的主要原料，經烘焙後可作香料、藥用，自古以來沖泡菊花茶當養生保健飲料，經濟價值極高。3.藥用：性味：花：甘、苦、涼；葉：辛、甘、平。效用：花：疏風清熱，平肝明目，解毒消腫。治頭痛，眩暈，目赤，腫毒；葉：治疔瘡，頭風，目眩。散風清熱，平肝明目。用於治風熱感冒、頭痛眩暈、目赤腫痛、眼目昏花。
-‧莖：	高 60~100 公分；莖直立，分枝或不分枝，被柔毛。
-‧葉：	葉互生；有短柄；葉片卵形至披針形，長 5~15 公分，羽狀淺裂或半裂，基部楔形，下面被白色短柔毛。
-‧花：	頭狀花序直徑約 2~3 公分，單個或數個集生於莖枝頂端；萼片內外兩層，每層 3 片，外層 3 片交疊於內層 3 片中間，共 6 片；總苞片多層，外層綠色，條形，邊緣膜質，外面被柔毛；舌狀花白色、紅色、紫色或黃色，大小總數約 270 片。花期 9~12 月。
-‧果：	瘦果不發育。
-‧特徵：	杭菊為多年生草本，高 60~100 公分；莖直立，分枝或不分枝，被柔毛。葉互生；有短柄；葉片卵形至披針形，長 5~15 公分，羽狀淺裂或半裂，基部楔形，下面被白色短柔毛。頭狀花序直徑約 2~3 公分，單個或數個集生於莖枝頂端；萼片內外兩層，每層 3 片，外層 3 片交疊於內層 3 片中間，共 6 片；總苞片多層，外層綠色，條形，邊緣膜質，外面被柔毛；舌狀花白色、紅色、紫色或黃色，大小總數約 270 片。瘦果不發育。花期 9~12 月。為栽培種，培育的品種極多，頭狀花序多變化，花色有白、黃。藥用菊花以河南、安徽、浙江栽培最多。
-‧更多資料：	
-http://plant.tesri.gov.tw/plant100/WebPlantDetail.aspx?tno=539026110 菊花
-中國植物誌 第 76(1) 卷 035 頁 PDF 菊花(參考)
-臺灣藥用植物資源名錄 行政院衛生署中醫藥委員會 編 菊 92年10月453頁
-
-‧拍攝地點：	苗栗縣銅鑼鄉九湖村(961116)
-            </a>
-
+ 日照:適合全日照且溫暖環境
+ 
+  <br></br>
+ 
+ 澆水:土乾澆水
+ 
+  
+ <br></br>
+ 介質:土質排水良好的微酸性、中性、弱鹽鹹土都可以
+ 
+ <br></br>
+ 
+ 繁殖:繁殖採用播種法或扦插法，要扦插繁殖時，應慎選新葉毛色亮麗的個體。
+</div>
             <br></br> <br></br> <br></br> <br></br> <br></br> <br></br> <br></br> <br></br> <br></br> <br></br> <br></br> <br></br> <br></br> <br></br> <br></br> <br></br> <br></br> <br></br> <br></br> <br></br> <br></br> <br></br>
 <a id="screens4">	
 ‧英文名稱：	Florist's Daisy，Chrysanthemum Flower，Chrysanthemum
