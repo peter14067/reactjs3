@@ -37,6 +37,27 @@ class About extends React.Component{
 
 
 /*
+
+
+            <div style={{backgroundColor:"#33C496",height:"120vh",borderTop:"2px solid white"}}>
+            <div class="hover">
+            <img src={Maz} alt="Logo" />
+            <img src={Logo5} alt="Logo" />
+            <p class="p1">123</p>
+            </div>
+         
+            
+         
+           
+            </div>
+
+
+
+
+
+
+
+
       <div class="hover">
             
             <img src={Logo5} alt="Logo" />
@@ -118,17 +139,6 @@ class About extends React.Component{
 
 
 
-            <div style={{backgroundColor:"#33C496",height:"120vh",borderTop:"2px solid white"}}>
-            <div class="hover">
-            <img src={Maz} alt="Logo" />
-            <img src={Logo5} alt="Logo" />
-            <p class="p1">123</p>
-            </div>
-         
-            
-         
-           
-            </div>
         
 
 
