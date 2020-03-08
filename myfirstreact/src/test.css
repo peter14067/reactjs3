@@ -1,9 +1,4 @@
-@media (max-width: 600px) {
-   .d-md-block {
-      display: block!important;
-   }
- }
- 
- .d-none {
-      display: none!important;
- }
+h1.tle{
+   color:black;
+   font-size: 4em;
+}
