@@ -19,7 +19,8 @@ import Pt2 from './Pt2.png';
 import Pt3 from './Pt3.png';
 import Logo11 from './Chrysanthemum-bottle.jpg';
 import { Item } from "react-grid-carousel";
-
+import  './test.css'; 
+//import  './index4.css'; 
 //import {Form,Col,Row} from 'react-bootstrap/Form'
 
 const items = [
@@ -47,23 +48,17 @@ const items = [
 
 
 class Test extends React.Component{
-	constructor(props) {
-		super(props);
-		this.state = { activeIndex: 0 };
+    constructor(props){
+        super(props);
+        this.state = { activeIndex: 0 };
 		this.next = this.next.bind(this);
 		this.previous = this.previous.bind(this);
 		this.goToIndex = this.goToIndex.bind(this);
-		this.onExiting = this.onExiting.bind(this);
-		this.onExited = this.onExited.bind(this);
-	}
 
-	onExiting() {
-		this.animating = true;
-	}
+    }
 
-	onExited() {
-		this.animating = false;
-	}
+
+
 
 	next() {
 		if (this.animating) return;
@@ -81,6 +76,11 @@ class Test extends React.Component{
 		if (this.animating) return;
 		this.setState({ activeIndex: newIndex });
 	}
+
+   
+
+
+//函数定义
 scrollToAnchor = (anchorName) => {
     if (anchorName) {
       
@@ -101,16 +101,14 @@ scrollToAnchor = (anchorName) => {
 
 		const slides = items.map((item) => {
 			return (
-				
-				
-
-				
-				<CarouselItem >
+                
+				<CarouselItem class="carousel-caption d-none d-md-block">
+			
 					
-				
-                    <a onClick={()=>this.scrollToAnchor(('screens')+item.id)}>
+					<a onClick={()=>this.scrollToAnchor(('screens')+item.id)}>
+                  
 					<img src={item.src} style={{maxWidth:"100%",height:"auto"}} alt={item.altText}    />
-          
+            
 					<CarouselCaption captionText={item.caption} captionHeader={item.caption} />
                     </a>
 				</CarouselItem>
@@ -122,13 +120,6 @@ scrollToAnchor = (anchorName) => {
 		return (
 			<div  >
 				
-				<link
-					rel='stylesheet'
-					href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css'
-				/>
-
-
-
 				<Carousel 
 					activeIndex={activeIndex}
 					next={this.next}

@@ -1,3 +1,9 @@
-h3{
-    color:blue;
-}
+@media (min-width: 768px) {
+   .d-md-block {
+      display: block!important;
+   }
+ }
+ 
+ .d-none {
+      display: none!important;
+ }
