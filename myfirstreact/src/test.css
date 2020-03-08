@@ -1,4 +1,4 @@
-@media (min-width: 768px) {
+@media (max-width: 600px) {
    .d-md-block {
       display: block!important;
    }

@@ -27,7 +27,7 @@ const items = [
 	{
         src:Logo1 ,
         id:0,
-		//altText: '檀香',
+		altText: '檀香',
 		caption: '檀香'
 	},
 	{
@@ -101,16 +101,18 @@ scrollToAnchor = (anchorName) => {
 
 		const slides = items.map((item) => {
 			return (
-                
-				<CarouselItem class="carousel-caption d-none d-md-block">
+				
+				
+				
+				<CarouselItem >
 			
 					
 					<a onClick={()=>this.scrollToAnchor(('screens')+item.id)}>
                   
-					<img src={item.src} style={{maxWidth:"100%",height:"auto"}} alt={item.altText}    />
-            
-					<CarouselCaption captionText={item.caption} captionHeader={item.caption} />
-                    </a>
+					<img src={item.src} style={{maxWidth:"100%",height:"auto"}}    />
+					</a>
+			<div class="carousel-caption " style={{display:"block"}}>{item.altText}</div>
+                
 				</CarouselItem>
 
                 
