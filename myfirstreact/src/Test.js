@@ -26,13 +26,13 @@ const items = [
 	{
         src:Logo1 ,
         id:0,
-		//altText: 'Slide 1',
-		//caption: 'Slide 1'
+		//altText: '檀香',
+		caption: '檀香'
 	},
 	{
         src: Logo3,
         id:1,
-		//altText: 'Slide 2',
+		altText: '金新木薑子',
 		//caption: 'Slide 2'
 	},
 	{
@@ -105,7 +105,7 @@ scrollToAnchor = (anchorName) => {
 					
 				
                     <a onClick={()=>this.scrollToAnchor(('screens')+item.id)}>
-					<img src={item.src} style={{maxWidth:"100%",height:"auto"}}   />
+					<img src={item.src} style={{maxWidth:"100%",height:"auto"}} alt={item.altText}    />
           
 					<CarouselCaption captionText={item.caption} captionHeader={item.caption} />
                     </a>
