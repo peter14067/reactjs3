@@ -33,13 +33,13 @@ const items = [
         src: Logo3,
         id:1,
 		altText: '金新木薑子',
-		//caption: 'Slide 2'
+		caption: '金新木薑子'
 	},
 	{
         src:Pc3,
         id:2,
-		//altText: 'Slide 2',
-		//caption: 'Slide 2'
+		altText: '杭菊',
+		caption: '杭菊'
 	},
 
 ];
@@ -47,17 +47,23 @@ const items = [
 
 
 class Test extends React.Component{
-    constructor(props){
-        super(props);
-        this.state = { activeIndex: 0 };
+	constructor(props) {
+		super(props);
+		this.state = { activeIndex: 0 };
 		this.next = this.next.bind(this);
 		this.previous = this.previous.bind(this);
 		this.goToIndex = this.goToIndex.bind(this);
+		this.onExiting = this.onExiting.bind(this);
+		this.onExited = this.onExited.bind(this);
+	}
 
-    }
+	onExiting() {
+		this.animating = true;
+	}
 
-
-
+	onExited() {
+		this.animating = false;
+	}
 
 	next() {
 		if (this.animating) return;
@@ -75,11 +81,6 @@ class Test extends React.Component{
 		if (this.animating) return;
 		this.setState({ activeIndex: newIndex });
 	}
-
-   
-
-
-//函数定义
 scrollToAnchor = (anchorName) => {
     if (anchorName) {
       
@@ -100,7 +101,10 @@ scrollToAnchor = (anchorName) => {
 
 		const slides = items.map((item) => {
 			return (
-                
+				
+				
+
+				
 				<CarouselItem >
 					
 				
@@ -118,6 +122,13 @@ scrollToAnchor = (anchorName) => {
 		return (
 			<div  >
 				
+				<link
+					rel='stylesheet'
+					href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css'
+				/>
+
+
+
 				<Carousel 
 					activeIndex={activeIndex}
 					next={this.next}
