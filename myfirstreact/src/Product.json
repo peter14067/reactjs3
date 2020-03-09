@@ -1,0 +1,25 @@
+[
+  {
+    "id": 1,
+    "img": "./Chrysanthemum.jpg",
+    "title": "杭菊",
+    "desc": "",
+    "price": 800
+  }
+ ,
+  {
+    "id": 2,
+    "img": "./lemongrass.jpg",
+    "title": "檸檬香茅",
+    "desc": "",
+    "price": 800
+  }
+ ,
+  {
+    "id": 3,
+    "img": "./Chrysanthemum-bottle.jpg",
+    "title": "杭菊罐",
+    "desc": "",
+    "price": 800
+  }
+]

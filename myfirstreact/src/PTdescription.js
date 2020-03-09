@@ -9,7 +9,7 @@ import { Container, Row, Col, Jumbotron, Button, Card, CardImg, CardBlock, CardT
 class PTdescription extends React.Component{
     state = {
         modal: false,
-        album: AlbumJson,
+        album:AlbumJson,
         cart:[],
       }
       

@@ -19,17 +19,17 @@ export default class Market extends React.Component{
 
 		return (
 		
-            <div>
-                   <Card style={{width:"50%"}}>
-                       <CardImg  style={{maxWidth:"100%"}}src={Logo} alt="Card image cap"         />   
-                       <CardTitle style={{textAlign:"center"}}>檀香</CardTitle>
+    
+                   <Card style={{width:"80%"}}>
+                       <CardImg  style={{maxWidth:"100%"}}src={product.img} alt="Card image cap"         />   
+        <CardTitle style={{textAlign:"center"}}>{product.title}</CardTitle>
                        <CardSubtitle style={{textAlign:"center"}}>
                      
-                        <div>售價:1500 </div>       
+        <div>售價:{product.price} </div>       
                        <select style={{height:"4vh",fontSize:"0.5em"}}>
                            
                            
-                           <option style={{padding:"1px",height:"4vh",fontSize:"0.5em"}} >1</option>
+                           <option  >1</option>
                            <option>2</option>
                            <option>3</option>
                        
@@ -40,13 +40,13 @@ export default class Market extends React.Component{
                        
                        </select>
                        
-                           <Button style={{padding:"1px",height:"4vh",fontSize:"0.5em",backgroundColor:"lightblue"}} >       加入購物車       </Button>
+                           <Button style={{padding:"1px",height:"4vh",fontSize:"0.5em",backgroundColor:"red",color:"white"}} onClick={()=> addToCart(product)} >       加入購物車       </Button>
                                             
                            </CardSubtitle>
                     
                    </Card>
 
-            </div>
+          
          
         );
 
