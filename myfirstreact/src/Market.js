@@ -14,19 +14,19 @@ export default class Market extends React.Component{
                        
         const {product,cart,addToCart}=this.props;
 		
-				
+        console.log({cart});
 			
 
 		return (
 		
 
-                   <Card style={{width:"100%",height:"25vh"}}>
-                       <CardImg  style={{maxWidth:"100%",height:"30vh",objectFit:"cover"}}src={product.img} alt="Card image cap"         />   
+                   <Card style={{maxWidth:"80%",height:"auto"}}>
+                       <CardImg  style={{maxWidth:"100%",height:"auto",objectFit:"cover"}}src={product.img} alt="Card image cap"         />   
         <CardTitle style={{textAlign:"center"}}>{product.title}</CardTitle>
     
                        <CardSubtitle style={{textAlign:"center"}}>
                      
-        <p style={{backgroundColor:"rgb(92,184,92)",color:"white",fontFamily:"bold"}}>售價:{product.price} </p>       
+        <p style={{backgroundColor:"rgb(92,184,92)",color:"white",fontFamily:" fantasy"}}>售價:{product.price} </p>       
             
         <CardSubtitle style={{textAlign:"center"}}>
             {product.desc}
@@ -55,7 +55,7 @@ export default class Market extends React.Component{
                 
                    </Card>
 
-                   
+                 
         );
 
 	
