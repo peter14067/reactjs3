@@ -15,7 +15,7 @@ import Tea1 from './Tea1.png';
 import Tea2 from './Tea2.png';
 import Tea3 from './Tea3.png';
 import Pt1 from './Pt1.png';
-import Pt2 from './Pt2.png';
+import Pt2 from './123.jpg';
 import Pt3 from './Pt3.png';
 import Logo11 from './Chrysanthemum-bottle.jpg';
 import { Item } from "react-grid-carousel";
@@ -220,48 +220,64 @@ scrollToAnchor = (anchorName) => {
 			<br></br>
 			<br></br>
 
+
 			<h2 style={{color:"green"}}>杭菊製造簡介</h2>
+			<br></br>
 			<h3>杭菊加工流程如下：</h3>
 
 		
-
+<div style={{float:"left",width:"100%"}}>
 			<h3 style={{fontStyle:"bold"}}>一、採收</h3>
 			<br></br>
 
-			<img src={Pt1} style={{maxWidth:"25%",height:"auto",float:"left"}}   />
-<p style={{maxWidth:"80%"}}>採收	杭菊於白露前後（約9月初）開始花芽分化，至10月初花蕾產生11月開始開花，在11月中旬到12月中下旬，待花序之舌狀花展開7-8分時採摘，一般可分3-4次採收。由於花芽分化的時間不同，所以成熟期不一致，故均以人工採花。採收時應選在晴天，且立即運送至工廠乾燥，下雨時不可採收，避免花朵含水量過高，影響乾燥品質。</p>
-<br></br>
-<br></br>
-<br></br>
-<h3 style={{fontStyle:"bold"}}>二、萎凋</h3>
+		
+<p style={{maxWidth:"100%",float:"left"}}>杭菊於白露前後（約9月初）開始花芽分化，至10月初
+花蕾產生11月開始開花，在11月中旬到12月中下旬，待花序之舌狀花展開7-8分時採摘，一般可分3-4次採收
+。由於花芽分化的時間不同，所以成熟期不一致，故均以人工採花。採收時應選在晴天，且立即運送至工廠
+乾燥，下雨時不可採收，避免花朵含水量過高，影響乾燥品質。
+</p>
 
+
+</div>
+
+<div>
+<h3 style={{fontStyle:"bold"}}>二、萎凋</h3>
+<br></br>
 
 當無法立即烘乾時，需將鮮花平鋪至萎凋架上，使其均勻失水，萎凋時間儘量愈短愈好，
 至多2天，否則花朵品質易受影響。
+
+
+
+</div>
 <br></br>
-<br></br>
+<div>
 <h3 style={{fontStyle:"bold"}}>三、乾燥</h3>
-<img src={Pt2} style={{maxWidth:"25%",height:"auto",float:"left"}}   />
-<p style={{maxWidth:"80%"}}>
+<img src={Pt2} style={{maxWidth:"100%",height:"auto"}}   />
+<p style={{width:"100%"}}>
 
 鮮花採摘後需進行乾燥，一般裝於網袋運送至烘乾場，鋪平在木製烘盤中，一層層堆壘於推車後置入乾燥室，進花初期約30℃，之後逐漸升溫，出花時溫度約達100℃，總共需16-30小時。另外亦可以循環式烘箱50-60℃脫水烘乾12小時。通常10公斤的鮮花可烘成1公斤的乾花，1分地產量高低差距頗大，高者一分地約可生產120公斤乾花。
 </p>
-<br></br>
-<br></br>
+
+
+</div>
+
+
+<div >
 <h3 style={{fontStyle:"bold"}}>四、包裝</h3>
-<img src={Pt3} style={{maxWidth:"25%",height:"auto",float:"left"}}   />
+
 <p style={{maxWidth:"80%"}}>
 當花朵乾燥至含水量7%以下時，即可取出包裝，一般以透明塑膠袋密封，包裝時應加入乾燥劑，減少受潮的機率。
 </p>
-<br></br>
-<br></br>
-<br></br>
-<br></br>
+
+
+</div>
+<div>
 <h3 style={{fontStyle:"bold"}}>五、儲存</h3>
 
 密封之包裝應存放在低濕乾燥的環境，避免日光曝曬變質
 
-
+</div>
 		
 			<br></br>
 			<br></br>
@@ -275,6 +291,7 @@ scrollToAnchor = (anchorName) => {
 		<img src={Tea1} style={{maxWidth:"25%",height:"auto"}}   />
 		<img src={Tea2} style={{maxWidth:"25%",height:"auto"}}   />
 		<img src={Tea3} style={{maxWidth:"25%",height:"auto"}}   />
+
 
 </div>
 

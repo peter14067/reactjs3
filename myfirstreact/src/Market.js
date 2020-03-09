@@ -1,6 +1,6 @@
 import React from "react"
 import Logo from './pc1.jpg'
-import {Jumbotron,Button,Card, CardTitle,CardImg, CardSubtitle,CardBody} from 'reactstrap';
+import {Jumbotron,Button,Card, CardTitle,CardImg, CardSubtitle,CardBody,Col} from 'reactstrap';
 import  './test.css'; 
 
 export default class Market extends React.Component{
@@ -19,9 +19,9 @@ export default class Market extends React.Component{
 
 		return (
 		
-    
-                   <Card style={{width:"80%"}}>
-                       <CardImg  style={{maxWidth:"100%"}}src={product.img} alt="Card image cap"         />   
+
+                   <Card style={{width:"100%",height:"25vh"}}>
+                       <CardImg  style={{maxWidth:"100%",height:"30vh",objectFit:"cover"}}src={product.img} alt="Card image cap"         />   
         <CardTitle style={{textAlign:"center"}}>{product.title}</CardTitle>
     
                        <CardSubtitle style={{textAlign:"center"}}>
@@ -52,11 +52,10 @@ export default class Market extends React.Component{
                            <Button style={{padding:"1px",height:"4vh",fontSize:"0.5em",backgroundColor:"red",color:"white"}} onClick={()=> addToCart(product)} >       加入購物車       </Button>
                                             
                            </CardSubtitle>
-                    
+                
                    </Card>
 
-          
-         
+                   
         );
 
 	
