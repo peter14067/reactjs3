@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "d333cfde37aa2c591735eed83bec7b16",
+    "revision": "0a3c1e20fda7d7305cc4f20111c5d42c",
     "url": "/reactjs3/index.html"
   },
   {
-    "revision": "968b6347ee8b6097607c",
+    "revision": "b977888985297f835489",
     "url": "/reactjs3/static/css/2.a9858c30.chunk.css"
   },
   {
-    "revision": "d4b8c5540d976c1cfda1",
-    "url": "/reactjs3/static/css/main.7479e738.chunk.css"
+    "revision": "4aba85e62106701bc809",
+    "url": "/reactjs3/static/css/main.044df6a6.chunk.css"
   },
   {
-    "revision": "968b6347ee8b6097607c",
-    "url": "/reactjs3/static/js/2.c6aaae3c.chunk.js"
+    "revision": "b977888985297f835489",
+    "url": "/reactjs3/static/js/2.819ee746.chunk.js"
   },
   {
-    "revision": "d4b8c5540d976c1cfda1",
-    "url": "/reactjs3/static/js/main.432f9d5b.chunk.js"
+    "revision": "4aba85e62106701bc809",
+    "url": "/reactjs3/static/js/main.5a429899.chunk.js"
   },
   {
     "revision": "8286a68b30e2cde06632",
@@ -44,12 +44,16 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/reactjs3/static/media/112201.37e26a56.jpg"
   },
   {
-    "revision": "86c3ef050dc2c36c9cae205ac3692a04",
-    "url": "/reactjs3/static/media/Chrysanthemum-bottle.86c3ef05.jpg"
+    "revision": "4edf48f0521cbceb0c013ec94570c73c",
+    "url": "/reactjs3/static/media/123.4edf48f0.jpg"
   },
   {
-    "revision": "675276701f0dcfb9993d9244c8653399",
-    "url": "/reactjs3/static/media/Chrysanthemum.67527670.jpg"
+    "revision": "172d8b82b9f0d129cae4326e5312682b",
+    "url": "/reactjs3/static/media/Chrysanthemum-bottle.172d8b82.jpg"
+  },
+  {
+    "revision": "0c8b096d8a7ff6b5c9aed4b3afeb91f6",
+    "url": "/reactjs3/static/media/Chrysanthemum.0c8b096d.jpg"
   },
   {
     "revision": "2166c3248494e39234537f7a76eb49ec",
@@ -58,10 +62,6 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "234d9488bbdc84282bb4a1360aca0a0e",
     "url": "/reactjs3/static/media/Pt1.234d9488.png"
-  },
-  {
-    "revision": "0c15793f78b9fbdaa5f67c6f29e882ab",
-    "url": "/reactjs3/static/media/Pt2.0c15793f.png"
   },
   {
     "revision": "4f2c4bf9f8d6a6ddd4b08e2ff50032fb",
