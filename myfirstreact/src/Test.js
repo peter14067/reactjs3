@@ -51,7 +51,7 @@ const {album,cart,modal,toggle}=this.state
               
                    <Jumbotron>
                    <h1 class="tle">幸福時機</h1>
-                   <p>這是我們的產品首頁</p>
+                   <p>這是幸福時機商品區，我們的產品絕對沒有添加農藥，讓您喝的健康、安心，並且帶有幸福的感覺</p>
                    <hr></hr>
                     <Button color="primary" onClick={this.toggle}>購物車</Button>
                    </Jumbotron>
@@ -59,7 +59,7 @@ const {album,cart,modal,toggle}=this.state
                   <Row>
                    {
                   album.map(product => (
-                    <Col sm={6} md={4}  >
+                    <Col sm={50} md={4}  >
                   <Market
                     product={product}
                     cart={cart}

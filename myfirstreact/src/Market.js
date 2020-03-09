@@ -23,9 +23,18 @@ export default class Market extends React.Component{
                    <Card style={{width:"80%"}}>
                        <CardImg  style={{maxWidth:"100%"}}src={product.img} alt="Card image cap"         />   
         <CardTitle style={{textAlign:"center"}}>{product.title}</CardTitle>
+    
                        <CardSubtitle style={{textAlign:"center"}}>
                      
-        <div>售價:{product.price} </div>       
+        <p style={{backgroundColor:"rgb(92,184,92)",color:"white",fontFamily:"bold"}}>售價:{product.price} </p>       
+            
+        <CardSubtitle style={{textAlign:"center"}}>
+            {product.desc}
+        </CardSubtitle>
+
+
+
+
                        <select style={{height:"4vh",fontSize:"0.5em"}}>
                            
                            

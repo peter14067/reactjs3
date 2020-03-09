@@ -2,24 +2,24 @@
   {
     "id": 1,
     "img": "./Chrysanthemum.jpg",
-    "title": "杭菊",
-    "desc": "",
-    "price": 800
+    "title": "杭菊(袋)",
+    "desc": "裡面總共有15包,每包可回沖2~3次",
+    "price": 150
   }
  ,
   {
     "id": 2,
     "img": "./lemongrass.jpg",
-    "title": "檸檬香茅",
-    "desc": "",
-    "price": 800
+    "title": "檸檬香茅(袋)",
+    "desc": "裡面總共有10包,每包可回沖2~3次",
+    "price": 100
   }
  ,
   {
     "id": 3,
     "img": "./Chrysanthemum-bottle.jpg",
-    "title": "杭菊罐",
-    "desc": "",
-    "price": 800
+    "title": "杭菊(罐)",
+    "desc": "裡面有250朵，每次沖泡8-9朵即可以使用",
+    "price": 250
   }
 ]
