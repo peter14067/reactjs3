@@ -1,14 +1,14 @@
 import React from "react"
-import { Form, Button, FormGroup, FormControl, ControlLabel } from "react-bootstrap";
+
 import {Carousel,CarouselCaption,CarouselItem,CarouselControl,CarouselIndicators } from "reactstrap";
 import Logo1 from './pc1.jpg';
 import Logo3 from './pc3.jpg'
-import Logo5 from './pc6.jpg';
-import Logo6 from './pc7.jpg';
-import Logo7 from './pc8.jpg';
-import Logo8 from './pc9.jpg';
-import Logo9 from './pc10.jpg';
-import Logo10 from './Chrysanthemum.jpg';
+// import Logo5 from './pc6.jpg';
+// import Logo6 from './pc7.jpg';
+// import Logo7 from './pc8.jpg';
+// import Logo8 from './pc9.jpg';
+// import Logo9 from './pc10.jpg';
+// import Logo10 from './Chrysanthemum.jpg';
 import Pc3 from './Chrysanthemumflower.jpg';
 import Tea from './Tea.png';
 import Tea1 from './Tea1.png';

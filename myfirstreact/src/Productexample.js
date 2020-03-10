@@ -1,10 +1,7 @@
 import React,{Component} from 'react';
 import PropTypes from 'prop-types';
-import { Button, Card, CardImg,  CardTitle, CardSubtitle, CardText, Badge, Carousel,
-  CarouselItem,
-  CarouselControl,
-  CarouselIndicators,
-  CarouselCaption } from 'reactstrap';
+import { Card, CardImg,  CardTitle, CardText, 
+ } from 'reactstrap';
 
 export default class Product extends Component {
     static propTypes={

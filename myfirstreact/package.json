@@ -2,8 +2,12 @@
   "name": "myfirstreact",
   "version": "0.1.0",
   "private": true,
+  "main": "server.js",
   "homepage": "https://peter14067.github.io/reactjs3",
   "dependencies": {
+    "body-parser": "^1.4.3",
+    "express": "^4.4.5",
+    "request": "2.64.0",
     "bootstrap": "^4.0.0-alpha.6",
     "google-map-react": "^1.1.5",
     "google-maps-react": "^2.0.2",
@@ -45,5 +49,8 @@
   },
   "devDependencies": {
     "gh-pages": "^2.2.0"
-  }
+  },
+  "description": "This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).",
+  "author": "",
+  "license": "ISC"
 }

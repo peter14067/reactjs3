@@ -1,18 +1,19 @@
 import React from "react"
 import  './about.css'; 
-import Logo1 from './112101.jpg';
-import Logo2 from './112102.jpg';
-import Logo3 from './112103.jpg';
-import Logo4 from './112104.jpg';
+
+// import Logo1 from './112101.jpg';
+// import Logo2 from './112102.jpg';
+// import Logo3 from './112103.jpg';
+// import Logo4 from './112104.jpg';
 import Logo5 from './112201.jpg';
 import Logo6 from './pc1.jpg';
 import Gold1 from './gold1.jpg';
 import Gold2 from './gold2.jpg';
 import Logo7 from './about.jpg';
-import Maz from './mazep.jpg';
+// import Maz from './mazep.jpg';
 import AlbumJson from './Album3.json'
 import Product from './Productexample';
-import { Container, Row, Col, Jumbotron, Button, Card, CardImg, CardBlock, CardTitle, CardSubtitle, CardText, Badge, Modal, ModalHeader, ModalBody, ModalFooter, Table, Alert } from 'reactstrap';
+import { Row, Col, Jumbotron, Card, CardTitle, Table } from 'reactstrap';
 
 
 
@@ -29,7 +30,7 @@ class About extends React.Component{
     render(){
                 
 
-      const { city,album1,album,cart,modal } = this.state;
+      const { album} = this.state;
         
       
       return( 

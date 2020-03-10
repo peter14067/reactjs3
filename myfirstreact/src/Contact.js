@@ -1,6 +1,5 @@
 import React from "react"
-import { Form, Button, FormGroup, FormControl, ControlLabel } from "react-bootstrap";
-import Logo7 from './contact.jpg';
+
 //import {Form,Col,Row} from 'react-bootstrap/Form'
 
 
@@ -33,57 +32,57 @@ class Contact extends React.Component{
             console.log(a3)
             console.log( a4)
         event.preventDefault();
-       if(this.state.username!="" && this.state.mail!="" && this.state.phone!="" && this.state.value!="" ){
+       if(this.state.username!=="" && this.state.mail!=="" && this.state.phone!=="" && this.state.value!=="" ){
         alert("姓名:"+this.state.username+"\r"+"電子信箱:"+this.state.mail+"\r"+"電話號碼:"+this.state.phone+"\r\r\r\r"+this.state.value+":\r"+this.state.descript);
-       }else if(this.state.username=="")
+       }else if(this.state.username==="")
 
        {   
-           if(this.state.mail=="" && this.state.phone=="" && this.state.value=="")
+           if(this.state.mail==="" && this.state.phone==="" && this.state.value==="")
            alert("姓名，電子信箱，電話號碼，產品問題均未填寫");
-           if(this.state.mail=="" && this.state.phone=="" && this.state.value!="")
+           if(this.state.mail==="" && this.state.phone==="" && this.state.value!=="")
             alert("姓名，電子信箱，電話號碼均未填寫");
-         if(this.state.mail=="" && this.state.phone!="" && this.state.value!="")
+         if(this.state.mail==="" && this.state.phone!=="" && this.state.value!=="")
                       alert("姓名，電子信箱未填寫");
-          if(this.state.mail!="" && this.state.phone!="" && this.state.value!="")
+          if(this.state.mail!=="" && this.state.phone!=="" && this.state.value!=="")
                       alert("姓名未填寫");
-         if(this.state.mail!="" && this.state.phone=="" && this.state.value!="")
+         if(this.state.mail!=="" && this.state.phone==="" && this.state.value!=="")
                       alert("姓名，電話號碼未填寫");
       
-        if(this.state.mail!="" && this.state.phone=="" && this.state.value=="")
+        if(this.state.mail!=="" && this.state.phone==="" && this.state.value==="")
                       alert("姓名，電話號碼，問題類型未填寫");
-        if(this.state.mail!="" && this.state.phone!="" && this.state.value=="")
+        if(this.state.mail!=="" && this.state.phone!=="" && this.state.value==="")
                       alert("姓名，問題類型未填寫");
-            if(this.state.mail=="" && this.state.phone!="" && this.state.value=="")
+            if(this.state.mail==="" && this.state.phone!=="" && this.state.value==="")
                       alert("姓名，電子信箱，問題類型未填寫");
         
         
         
-                    }else if(this.state.username!=""){
+                    }else if(this.state.username!==""){
 
-            if(this.state.mail=="" && this.state.phone=="" && this.state.value=="")
+            if(this.state.mail==="" && this.state.phone==="" && this.state.value==="")
             alert("電子信箱，電話號碼，產品問題均未填寫");
-            if(this.state.mail=="" && this.state.phone=="" && this.state.value!="")
+            if(this.state.mail==="" && this.state.phone==="" && this.state.value!=="")
              alert("電子信箱，電話號碼均未填寫");
-          if(this.state.mail=="" && this.state.phone!="" && this.state.value!="")
+          if(this.state.mail==="" && this.state.phone!=="" && this.state.value!=="")
                        alert("電子信箱未填寫");
-         if(this.state.mail=="" && this.state.phone!="" && this.state.value=="")
+         if(this.state.mail==="" && this.state.phone!=="" && this.state.value==="")
                        alert("電子信箱，問題類型未填寫");
-        if(this.state.mail!="" && this.state.phone=="" && this.state.value!="")
+        if(this.state.mail!=="" && this.state.phone==="" && this.state.value!=="")
                        alert("電話號碼未填寫");
-         if(this.state.mail!="" && this.state.phone=="" && this.state.value=="")
+         if(this.state.mail!=="" && this.state.phone==="" && this.state.value==="")
                        alert("電話號碼，問題類型未填寫");                       
-         if(this.state.mail!="" && this.state.phone!="" && this.state.value=="")
+         if(this.state.mail!=="" && this.state.phone!=="" && this.state.value==="")
          alert("問題類型未填寫");
 
 
 
 
             
-        }else if(this.state.mail!=""){
+        }else if(this.state.mail!==""){
 
-            if(this.state.username=="" && this.state.phone=="" && this.state.value=="")
+            if(this.state.username==="" && this.state.phone==="" && this.state.value==="")
             alert("姓名，電話號碼，產品問題均未填寫");
-            if(this.state.username=="" && this.state.phone=="" && this.state.value!="")
+            if(this.state.username==="" && this.state.phone==="" && this.state.value!=="")
              alert("姓名，電話號碼均未填寫");
  
 

@@ -5,9 +5,10 @@ import { Title } from "./Title"
 import { Home } from "./Home"
 import { About } from "./About"
 import {Contact} from "./Contact"
+import {Application} from "./Application"
 import Product from './Product'
 import {Product1} from "./Product1"
-import {Test} from "./Test"
+// import {Test} from "./Test"
 import {PTdescription} from "./PTdescription"
 import {Component} from "./App"
 import 'bootstrap/dist/css/bootstrap.css';
@@ -36,7 +37,8 @@ class Main extends React.Component {
                       <Link class="Nav_link" to="/PTdescription" >產品購買</Link>
                       <Link class="Nav_link" to="/Contact" >聯絡我們</Link>
                       <Link class="Nav_link" to="/Product1" >植物介紹</Link>
-                      <Link class="Nav_link" to="/Test" >測試</Link>
+                      
+                      <Link class="Nav_link" to="/Application" >Application</Link>
                   </table>
                 
                  
@@ -50,7 +52,8 @@ class Main extends React.Component {
                   <Route path="/PTdescription"  component={PTdescription}/>
                   <Route path="/Contact" component={Contact} />
                   <Route path="/Product1" component={Product1} />
-                  <Route path="/Test" component={Test} />
+                 
+                  <Route path="/Application" component={Application} />
                   
             
 
