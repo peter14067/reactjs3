@@ -99,6 +99,10 @@ const {album,cart,modal,toggle}=this.state
                     handelChange={this.handleChange}
                     
                   />
+
+
+
+                  
                   </Col>
                   ))
                 }
