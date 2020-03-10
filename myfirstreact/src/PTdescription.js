@@ -170,7 +170,7 @@ const {album,cart,modal,toggle}=this.state
 
 
 
-123
+
                 </Container>
        
             </div>
