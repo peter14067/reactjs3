@@ -16,10 +16,7 @@ class PTdescription extends React.Component{
 
 
 
-    handleChange(event) {
-           this.setState({value: event.target.value});
-         }
-  
+
 
 
 
@@ -45,13 +42,66 @@ class PTdescription extends React.Component{
     }
 
     addToCart=(product)=>{
+       
+             
 
       const cart=this.state.cart;
-      const a=product.value
-     console.log(a);
+    
       
       cart.push(product);
    
+     
+      this.setState({
+        cart
+       
+      });
+  
+
+ 
+    }
+
+
+    addToCart5=(product)=>{
+       
+             
+
+      const cart=this.state.cart;
+    
+      
+      cart.push(product);
+      cart.push(product);
+      cart.push(product);
+      cart.push(product);
+      cart.push(product);
+     
+      this.setState({
+        cart
+       
+      });
+  
+
+ 
+    }
+
+
+
+    addToCart10=(product)=>{
+       
+             
+
+      const cart=this.state.cart;
+    
+      
+      cart.push(product);
+      cart.push(product);
+      cart.push(product);
+      cart.push(product);
+      cart.push(product);
+      cart.push(product);
+      cart.push(product);
+      cart.push(product);
+      cart.push(product);
+      cart.push(product);
      
       this.setState({
         cart
@@ -96,6 +146,8 @@ const {album,cart,modal,toggle}=this.state
                     product={product}
                     cart={cart}
                     addToCart={this.addToCart}
+                    addToCart5={this.addToCart5}
+                    addToCart10={this.addToCart10}
                     handelChange={this.handleChange}
                     
                   />

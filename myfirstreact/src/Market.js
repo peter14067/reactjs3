@@ -21,23 +21,13 @@ export default class Market extends React.Component{
   
 
                        
-        const {product,cart,addToCart,value,handleChange}=this.props;
+        const {product,cart,addToCart,value,handleChange,addToCart5,addToCart10}=this.props;
 		
     
 			
 
 		return (
-		
-        //     <select value={this.state.value}   onChange={this.handleChange} style={{height:"4vh",fontSize:"0.5em"}}>
-                                                       
-                           
-        //     <option value="1">1</option>
-        //     <option value="2">2</option>
-        //     <option value="3">3</option>
-        
-        //     <option value="4">4</option>
-        //     <option value="5">5</option>
-        
+
         
         
         // </select>
@@ -56,10 +46,14 @@ export default class Market extends React.Component{
         </CardSubtitle>
 
 
+    
+        
+        
 
+                           <Button style={{padding:"1px",height:"4vh",fontSize:"0.5em",backgroundColor:"red",color:"white"}} onClick={()=> addToCart(product)} >       購買1個       </Button>
 
-                           <Button style={{padding:"1px",height:"4vh",fontSize:"0.5em",backgroundColor:"red",color:"white"}} onClick={()=> addToCart(product)} >       加入購物車       </Button>
-                                            
+                                                     <Button style={{padding:"1px",height:"4vh",fontSize:"0.5em",backgroundColor:"red",color:"white"}} onClick={()=> addToCart5(product)} >        購買5個         </Button>
+                                                     <Button style={{padding:"1px",height:"4vh",fontSize:"0.5em",backgroundColor:"red",color:"white"}} onClick={()=> addToCart10(product)} >        購買10個         </Button>         
                            </CardSubtitle>
                 
                    </Card>
