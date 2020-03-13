@@ -48,12 +48,12 @@ export default class Market extends React.Component{
 
     
         
-        
+            選購數量:
 
-                           <Button style={{padding:"1px",height:"4vh",fontSize:"0.5em",backgroundColor:"red",color:"white"}} onClick={()=> addToCart(product)} >       購買1個       </Button>
+                           <Button style={{width:"5vh",padding:"1px",height:"4vh",fontSize:"0.5em",backgroundColor:"red",color:"white",fontSize:"1em"}} onClick={()=> addToCart(product)} >     1    </Button>
 
-                                                     <Button style={{padding:"1px",height:"4vh",fontSize:"0.5em",backgroundColor:"red",color:"white"}} onClick={()=> addToCart5(product)} >        購買5個         </Button>
-                                                     <Button style={{padding:"1px",height:"4vh",fontSize:"0.5em",backgroundColor:"red",color:"white"}} onClick={()=> addToCart10(product)} >        購買10個         </Button>         
+                                                     <Button style={{width:"5vh",padding:"1px",height:"4vh",fontSize:"0.5em",backgroundColor:"red",color:"white",fontSize:"1em"}} onClick={()=> addToCart5(product)} >      2         </Button>
+                                                     <Button style={{width:"5vh",padding:"1px",height:"4vh",fontSize:"0.5em",backgroundColor:"red",color:"white",fontSize:"1em"}} onClick={()=> addToCart10(product)} >        5        </Button>         
                            </CardSubtitle>
                 
                    </Card>

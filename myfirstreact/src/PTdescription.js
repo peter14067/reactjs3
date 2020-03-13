@@ -39,7 +39,20 @@ class PTdescription extends React.Component{
     
       alert("結帳成功，總金額是"+totolPrice)
     
+      
     }
+
+
+    deleteCartItem = (index) => {
+      const cart = this.state.cart;
+      cart.splice(index,1);
+      this.setState({
+          cart
+      });
+  }
+
+
+
 
     addToCart=(product)=>{
        
@@ -66,13 +79,10 @@ class PTdescription extends React.Component{
              
 
       const cart=this.state.cart;
-    
-      
-      cart.push(product);
-      cart.push(product);
-      cart.push(product);
-      cart.push(product);
-      cart.push(product);
+      let i=0;
+      for(i=0;i<2;i++){
+        cart.push(product);
+        }
      
       this.setState({
         cart
@@ -90,19 +100,10 @@ class PTdescription extends React.Component{
              
 
       const cart=this.state.cart;
-    
-      
+       let i=0;
+      for(i=0;i<5;i++){
       cart.push(product);
-      cart.push(product);
-      cart.push(product);
-      cart.push(product);
-      cart.push(product);
-      cart.push(product);
-      cart.push(product);
-      cart.push(product);
-      cart.push(product);
-      cart.push(product);
-     
+      }
       this.setState({
         cart
        
@@ -183,7 +184,7 @@ const {album,cart,modal,toggle}=this.state
                   <th>{index+1}</th>
                   <td>{item.title}</td>
                   <td>{item.price}</td>
-                  <td><Button>X</Button></td>
+                  <td><Button style={{border:"none",borderBlockColor:"white"}} onClick={()=>this.deleteCartItem(index)}>x</Button>{' '}</td>
                       </tr>
 
 

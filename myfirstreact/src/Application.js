@@ -16,7 +16,7 @@ export default class Application extends Component {
   
     
      componentDidMount = async () => {
-       const data = await fetch('https://demojson.herokuapp.com/cart').then(response => response.json());
+       const data = await fetch('http://3.19.29.61:3000/').then(response => response.json());
   
   this.setState({
        album: data,
@@ -50,6 +50,13 @@ export default class Application extends Component {
     checkout = (totalPrice) => {
       alert(`已從您的信用卡中扣除${totalPrice}元！`);
     }
+
+
+
+
+    
+
+
   
     render() {
       const { album, cart, modal } = this.state;

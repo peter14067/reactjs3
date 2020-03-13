@@ -6,11 +6,11 @@
   "homepage": "https://peter14067.github.io/reactjs3",
   "dependencies": {
     "body-parser": "^1.4.3",
-    "express": "^4.4.5",
-    "request": "2.64.0",
     "bootstrap": "^4.0.0-alpha.6",
+    "express": "^4.4.5",
     "google-map-react": "^1.1.5",
     "google-maps-react": "^2.0.2",
+    "mongodb": "^3.5.5",
     "react": "^16.10.2",
     "react-bootstrap": "^0.32.4",
     "react-bootstrap-carousel": "^4.0.3",
@@ -23,6 +23,7 @@
     "react-router-dom": "^5.1.2",
     "react-scripts": "3.2.0",
     "reactstrap": "^8.4.1",
+    "request": "2.64.0",
     "rsuite": "^4.2.1"
   },
   "scripts": {
