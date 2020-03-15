@@ -1,2 +1,0 @@
-(this.webpackJsonpmyfirstreact=this.webpackJsonpmyfirstreact||[]).push([[0],{19:function(t,e,n){t.exports=n(20)},20:function(t,e,n){n(21).createServer((function(t,e){e.writeHead(200,{"Content-Type":"text/plain"}),e.write("Hello World"),e.end()})).listen(3e3)},25:function(t,e){},27:function(t,e){}},[[19,1,2]]]);
-//# sourceMappingURL=main.0f514c76.chunk.js.map
