@@ -5,9 +5,11 @@
   "main": "server.js",
   "homepage": "https://peter14067.github.io/reactjs3",
   "dependencies": {
+    "axios": "^0.19.2",
     "body-parser": "^1.4.3",
     "bootstrap": "^4.0.0-alpha.6",
-    "express": "^4.4.5",
+    "express": "^4.17.1",
+    "gmail-send": "^1.8.10",
     "google-map-react": "^1.1.5",
     "google-maps-react": "^2.0.2",
     "mongodb": "^3.5.5",

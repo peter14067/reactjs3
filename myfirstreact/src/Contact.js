@@ -1,9 +1,32 @@
 import React from "react"
+const account = require('./account.js')
+const send = require('gmail-send')({
+  user: account.user,
+  pass: account.password,
+});
 
+ 
 //import {Form,Col,Row} from 'react-bootstrap/Form'
 
+process.env.NODE_TLS_REJECT_UNAUTHORIZED = "0";
 
 
+
+function sendEmail(){
+send({
+  SecureToken:"7c9f4986-d34e-4ce0-bf4c-ac836cc4c1ed ",
+  To : 'peter14067@gmail.com',
+  From : "peter14067@gmail.com",
+  Subject : "This is the subject",
+  Body : "And this is the body"
+})
+.then(
+message => alert(message)
+);
+}
+
+
+  
 
 
 class Contact extends React.Component{
@@ -13,7 +36,9 @@ class Contact extends React.Component{
         
             this.changeState = this.changeState.bind(this);
             this.handleChange=this.handleChange.bind(this);
+
     }
+
 
 
     handleChange(event) {
@@ -34,6 +59,7 @@ class Contact extends React.Component{
         event.preventDefault();
        if(this.state.username!=="" && this.state.mail!=="" && this.state.phone!=="" && this.state.value!=="" ){
         alert("姓名:"+this.state.username+"\r"+"電子信箱:"+this.state.mail+"\r"+"電話號碼:"+this.state.phone+"\r\r\r\r"+this.state.value+":\r"+this.state.descript);
+        sendEmail();
        }else if(this.state.username==="")
 
        {   
@@ -234,7 +260,7 @@ class Contact extends React.Component{
                 <br></br>
                 <br></br>
                 <form onSubmit={(e)=>this.mySubmitHandler(e,this.state)} >
-                <input type='submit' style={{backgroundColor:"Slateblue",color:"white",width:"100%"}}/>
+                <input type='submit'  style={{backgroundColor:"Slateblue",color:"white",width:"100%"}}/>
                 </form>
 
 

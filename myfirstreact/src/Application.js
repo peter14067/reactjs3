@@ -2,127 +2,212 @@
 import { Container, Row, Col, Jumbotron, Button, Modal, ModalHeader, ModalBody, ModalFooter } from 'reactstrap';
 import AlbumJson from './Product.json'
 import Product from './Product';
-
+import axios from 'axios';
 import React, { Component } from 'react';
 
 import  './test.css'; 
 
+
+
+
 export default class Application extends Component {
-    state = {
-      modal: false,
-      album: AlbumJson,
-      cart: [],
-    }
-  
-    
-     componentDidMount = async () => {
-       const data = await fetch('http://3.19.29.61:3000/').then(response => response.json());
-  
-  this.setState({
-       album: data,
-    });
-    }
-  
-    toggle = () => {
-      this.setState({
-        modal: !this.state.modal,
-      });
-    }
-  
-    addToCart = (product) => {
-      const cart = this.state.cart;
-      cart.push(product);
-  
-      this.setState({
-        cart
-      });
-    }
-  
-    deleteCartItem = (index) => {
-      const cart = this.state.cart;
-      cart.splice(index, 1);
-  
-      this.setState({
-        cart
-      });
-    }
-  
-    checkout = (totalPrice) => {
-      alert(`已從您的信用卡中扣除${totalPrice}元！`);
-    }
+   
+   state = {
+    data: [],
+    id: 0,
+    message: null,
+    message1: null,
+    intervalIsSet: false,
+    idToDelete: null,
+    idToUpdate: null,
+    objectToUpdate: null,
+  };
 
-
-
-
-    
-
-
-  
-    render() {
-      const { album, cart, modal } = this.state;
-      const totalPrice = cart.reduce((acc, item) => (acc += item.price), 0);
-  
-      return (
-        <div className="content">
-          <Container>
-            <Row>
-              <Col md={12}>
-                <Jumbotron>
-                  <h1 className="display-3">美客唱片</h1>
-                  <p className="lead">
-                    美客唱片成立以來，結合實體唱片通路、唱片公司、網站，因而擁有豐富、完整的音樂資源
-                  </p>
-                  <p className="lead">
-                    並與電視、廣播等媒體進行策略聯盟，已迅速打響知名度，並廣受各界好評
-                  </p>
-                  <p className="lead">
-                    不僅如此，美客唱片將跨足大中華地區，透過舉辦跨國、跨區域的大型頒獎典禮、演唱會以及音樂活動
-                  </p>
-                  <p className="lead">
-                    進一步擴大影響力，提昇流行音樂產業的動能
-                  </p>
-                  <hr className="my-2" />
-                  <p className="lead">
-                    <Button color="primary" onClick={this.toggle}>購物車({cart.length})</Button>
-                  </p>
-                </Jumbotron>
-              </Col>
-            </Row>
-            <Row>
-              {
-                album.map(product => (
-                  <Col sm={6} md={4} className="mb-3">
-                    <Product
-                      product={product}
-                      cart={cart}
-                      addToCart={this.addToCart}
-                    />
-                  </Col>
-                ))
-              }
-            </Row>
-  
-            <Modal isOpen={modal} toggle={this.toggle}>
-              <ModalHeader toggle={this.toggle}>購物車</ModalHeader>
-              <ModalBody>
-               
-              </ModalBody>
-              <ModalFooter>
-                <Button
-                  disabled={cart.length === 0}
-                  color="primary"
-                  onClick={() => this.checkout(totalPrice)}
-                >
-                  結帳
-                </Button>{' '}
-                <Button color="secondary" onClick={this.toggle}>取消</Button>
-              </ModalFooter>
-            </Modal>
-          </Container>
-        </div>
-      );
+  // 當元件載入時，它首先要從資料庫中獲取所有的資料，這裡會設定一個輪詢邏輯，及時將資料在 `UI` 中更新。
+  componentDidMount() {
+    this.getDataFromDb();
+    if (!this.state.intervalIsSet) {
+      let interval = setInterval(this.getDataFromDb, 1000);
+      this.setState({ intervalIsSet: interval });
     }
   }
-  
+
+  // 永遠不要讓一個程序持續存在
+  // 當我們結束使用時，一定要殺死這個程序
+  componentWillUnmount() {
+    if (this.state.intervalIsSet) {
+      clearInterval(this.state.intervalIsSet);
+      this.setState({ intervalIsSet: null });
+    }
+  }
+
+
+  // 我們的第一個使用後端api的get方法
+  // 從我們的資料庫中獲取資料
+  getDataFromDb = () => {
+    fetch('http://localhost:3001/api/getData')
+      .then((data) => data.json())
+      .then((res) => this.setState({ data: res.data }));
+  };
+
+  // 使用 put 方法，在資料庫裡面插入一條新的資料
+  putDataToDB = (message,message1) => {
+    let currentIds = this.state.data.map((data) => data.id);
+    let idToBeAdded = 1;
+    while (currentIds.includes(idToBeAdded)) {
+      ++idToBeAdded;
+    }
+
+    axios.post('http://localhost:3001/api/putData', {
+      id: idToBeAdded,
+      message: message,
+      message1:message1,
+    });
+  };
+
+
+  putDataToDB1 = (message1) => {
+    let currentIds = this.state.data.map((data) => data.id);
+    let idToBeAdded = 1;
+    while (currentIds.includes(idToBeAdded)) {
+      ++idToBeAdded;
+    }
+
+    axios.post('http://localhost:3001/api/putData1', {
+      id: idToBeAdded,
+      message1: message1,
+      
+    });
+  };
+
+  // 我們的刪除方法使用我們的後端api
+  // 刪除現有資料庫資訊
+  deleteFromDB = (idTodelete) => {
+    parseInt(idTodelete);
+    let objIdToDelete = null;
+    this.state.data.forEach((dat) => {
+      if (dat.id == idTodelete) {
+        objIdToDelete = dat._id;
+      }
+    });
+
+    axios.delete('http://localhost:3001/api/deleteData', {
+      data: {
+        id: objIdToDelete,
+      },
+    });
+  };
+
+  // 我們的更新方法使用我們的後端api
+  // 覆蓋現有的資料庫資訊
+  updateDB = (idToUpdate, updateToApply) => {
+    let objIdToUpdate = null;
+    parseInt(idToUpdate);
+    this.state.data.forEach((dat) => {
+      if (dat.id == idToUpdate) {
+        objIdToUpdate = dat._id;
+      }
+    });
+
+    axios.post('http://localhost:3001/api/updateData', {
+      id: objIdToUpdate,
+      update: { message: updateToApply },
+    });
+  };
+
+  render() {
+    const { data } = this.state;
+    
+    return (
+      <div style={{marginTop:"5vh"}}>
+        <ul>
+          {data.length <= 0
+            ? 'NO DB ENTRIES YET'
+            : data.map((dat) => (
+                <li style={{ padding: '10px' }} key={data.message}>
+                  <span style={{ color: 'gray' }}> id: </span> {dat.id} <br />
+                  <span style={{ color: 'gray' }}> data: </span>
+                  {dat.message}
+                  <br />
+                  <span style={{ color: 'gray' }}> 
+                  message: {dat.message1}
+                  </span>
+                </li>
+              ))}
+        </ul>
+        <div style={{ padding: '10px' }}>
+          <input
+            type="text"
+            onChange={(e) => this.setState({ message: e.target.value })}
+            placeholder="請輸入帳號"
+            style={{ width: '200px' }}
+          />
+
+
+            <div style={{ padding: '10px' }}>
+          <input
+            type="text"
+            onChange={(e) => this.setState({ message1: e.target.value })}
+            placeholder="請輸入密碼"
+            style={{ width: '200px' }}
+          />
+            </div>
+
+          
+          <button onClick={() => this.putDataToDB(this.state.message,this.state.message1)}>
+            ADD
+          </button>
+        </div>
+
+        <div style={{ padding: '10px' }}>
+          <input
+            type="text"
+            onChange={(e) => this.setState({ message1: e.target.value })}
+            placeholder="add something in the database"
+            style={{ width: '200px' }}
+          />
+          
+          <button onClick={() => this.putDataToDB1(this.state.message1)}>
+            ADD
+          </button>
+        </div>
+
+
+        <div style={{ padding: '10px' }}>
+          <input
+            type="text"
+            style={{ width: '200px' }}
+            onChange={(e) => this.setState({ idToDelete: e.target.value })}
+            placeholder="put id of item to delete here"
+          />
+          <button onClick={() => this.deleteFromDB(this.state.idToDelete)}>
+            DELETE
+          </button>
+        </div>
+        <div style={{ padding: '10px' }}>
+          <input
+            type="text"
+            style={{ width: '200px' }}
+            onChange={(e) => this.setState({ idToUpdate: e.target.value })}
+            placeholder="id of item to update here"
+          />
+          <input
+            type="text"
+            style={{ width: '200px' }}
+            onChange={(e) => this.setState({ updateToApply: e.target.value })}
+            placeholder="put new value of the item here"
+          />
+          <button
+            onClick={() =>
+              this.updateDB(this.state.idToUpdate, this.state.updateToApply)
+            }
+          >
+            UPDATE
+          </button>
+        </div>
+      </div>
+    );
+  }
+}
 
 export {Application}

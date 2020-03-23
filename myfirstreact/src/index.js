@@ -12,6 +12,10 @@ import {Product1} from "./Product1"
 import {PTdescription} from "./PTdescription"
 import {Component} from "./App"
 import 'bootstrap/dist/css/bootstrap.css';
+//  const express = require('express');
+//const app = express();
+
+const port = 3000;
 
 
 
