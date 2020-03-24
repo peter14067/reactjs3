@@ -166,44 +166,44 @@ class Contact extends React.Component{
             <br></br>
             </div>
         
-            <div style={{margin:"0px auto",color:"blue",fontSize:"1em"}}>
+            <div style={{margin:"0px auto",color:"blue",fontSize:"1em",textAlign:"center"}}>
             親愛的客戶您好，您的問題就是我們的問題，<br></br>如果有任何疑問或者建議需要我們的協助，<br></br>歡迎您透過以下任何管道與我們聯繫，我們將竭誠為您服務。
             </div>
         
                 </div>
                 <br></br>
-                       <div style={{border:"0.5px solid grey",boxShadow:"1px 1px 1px 1px #cccccc"}}>
+                       <div style={{border:"0.5px solid grey",boxShadow:"1px 1px 1px 1px #cccccc",textAlign:"center"}}>
                        
-            <table1  >
+            <table1 >
   
             <th >
-      <tr>
-            <td>面交住址:</td>
-            <td>彰化縣東環路三段336號</td>
+      <tr  >
+            <td style={{textAlign:"center"}}>面交住址:</td>
+            <td style={{textAlign:"center"}} >彰化縣東環路三段336號</td>
        </tr>
 
 
       <tr>
-            <td>線上信箱:</td>
-            <td>peter14067@gmail.com</td>
+            <td style={{textAlign:"center"}} >線上信箱:</td>
+            <td style={{textAlign:"center"}} >peter14067@gmail.com</td>
        </tr>
 
 
       <tr>
-            <td>開站日期:</td>
-            <td>2019/11/19</td>
+            <td style={{textAlign:"center"}} >開站日期:</td>
+            <td style={{textAlign:"center"}} >2019/11/19</td>
        </tr>
 
 
       <tr>
-            <td>客服電話:</td>
-            <td>0935489547</td>
+            <td style={{textAlign:"center"}}>客服電話:</td>
+           <td style={{textAlign:"center"}}>0935489547</td>
        </tr>
 
 
       <tr>
             <td>客服時間:</td>
-            <td>星 期 一 ~ 五 早上 8:30 至 下午 5:00</td>
+            <td> &nbsp; &nbsp; &nbsp;星 期 一 ~ 五 早上 8:30 至 下午 5:00</td>
        </tr>
 
        </th>
